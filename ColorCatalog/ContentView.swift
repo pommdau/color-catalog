@@ -9,18 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var apppleColorCollection: [AppleColorCollection] = []
+    @State var apppleColorCollections: [AppleColorCollection] = []
+    @State var selectedAppleColorCollection: AppleColorCollection?
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        NavigationSplitView {
+            List(apppleColorCollections, selection: $selectedAppleColorCollection) { apppleColorCollection in
+                NavigationLink(value: apppleColorCollection) {
+                    Text(apppleColorCollection.title)
+                }
+            }
+        } detail: {
+            if let selectedAppleColorCollection {
+                Text(selectedAppleColorCollection.title)
+            } else {
+                Text("Pick a color")
+            }
         }
-        .padding()
         .onAppear() {
-            self.apppleColorCollection = loadJson()
+            self.apppleColorCollections = loadJson()
         }
     }
     

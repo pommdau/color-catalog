@@ -14,6 +14,7 @@
 		DAE5CA122AA0DDB0006F20AF /* Standard Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA102AA0DDB0006F20AF /* Standard Colors.json */; };
 		DAE5CA132AA0DDB0006F20AF /* UI Element Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA112AA0DDB0006F20AF /* UI Element Colors.json */; };
 		DAE5CA172AA0E5A0006F20AF /* AppleColorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA162AA0E5A0006F20AF /* AppleColorCollection.swift */; };
+		DAE5CA192AA0EA34006F20AF /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA182AA0EA34006F20AF /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DAE5CA102AA0DDB0006F20AF /* Standard Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Standard Colors.json"; sourceTree = "<group>"; };
 		DAE5CA112AA0DDB0006F20AF /* UI Element Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UI Element Colors.json"; sourceTree = "<group>"; };
 		DAE5CA162AA0E5A0006F20AF /* AppleColorCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorCollection.swift; sourceTree = "<group>"; };
+		DAE5CA182AA0EA34006F20AF /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				DAE5CA142AA0DDB1006F20AF /* Resources */,
 				DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */,
+				DAE5CA182AA0EA34006F20AF /* TestView.swift */,
 				DAE5CA032AA0DD94006F20AF /* ContentView.swift */,
 				DAE5CA152AA0E594006F20AF /* Models */,
 				DAE5CA052AA0DD95006F20AF /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE5CA192AA0EA34006F20AF /* TestView.swift in Sources */,
 				DAE5CA172AA0E5A0006F20AF /* AppleColorCollection.swift in Sources */,
 				DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */,
 				DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */,
