@@ -13,7 +13,9 @@ struct ContentView: View {
     @State var selectedAppleColorCollection: AppleColorCollection?
     
     var body: some View {
+        Text("hoge")
         
+        /*conform to 'RandomAccessCollection'
         NavigationSplitView {
             List(apppleColorCollections, selection: $selectedAppleColorCollection) { apppleColorCollection in
                 NavigationLink(value: apppleColorCollection) {
@@ -27,6 +29,7 @@ struct ContentView: View {
                 Text("Pick a color")
             }
         }
+         */
         .onAppear() {
             self.apppleColorCollections = loadJson()
         }
