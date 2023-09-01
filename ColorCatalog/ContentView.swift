@@ -10,22 +10,36 @@ import SwiftUI
 struct ContentView: View {
     
     @State var appleColorCollections: [AppleColorCollection] = []
-    @State var selectedAppleColorCollection: AppleColorCollection?
+    @State var selectedSection: AppleColorSection?
     
-    var body: some View {    
+    var body: some View {
         NavigationSplitView {
-            List(appleColorCollections, selection: $selectedAppleColorCollection) { apppleColorCollection in
-                NavigationLink(value: apppleColorCollection) {
-                    Text(apppleColorCollection.title)
+//            List(appleColorCollections, selection: $selectedAppleColorCollection) { apppleColorCollection in
+//                NavigationLink(value: apppleColorCollection) {
+//                    Text(apppleColorCollection.title)
+//                }
+//            }
+            
+            List(selection: $selectedSection) {
+                ForEach(appleColorCollections) { collection in
+                    Section(collection.title) {
+                        ForEach(collection.sections) { section in
+//                            Text(section.title)
+                            NavigationLink(value: section) {
+                                Text(section.title)
+                            }
+                        }
+                    }
                 }
             }
         } detail: {
-            if let selectedAppleColorCollection {
-                Text(selectedAppleColorCollection.title)
+            if let selectedSection {
+                Text(selectedSection.title)
             } else {
                 Text("Pick a color")
             }
         }
+
         .onAppear() {
             self.appleColorCollections = loadJson()
         }
