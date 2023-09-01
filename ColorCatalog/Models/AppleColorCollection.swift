@@ -23,7 +23,7 @@ struct AppleColor: Codable, Identifiable, Hashable {
 struct AppleColorSection: Codable, Identifiable, Hashable {
     var id: String { title }
     let title: String
-    let colors: [AppleColor]
+    let colors: [AppleColor]?
 }
 
 struct AppleColorCollection: Codable, Identifiable, Hashable {

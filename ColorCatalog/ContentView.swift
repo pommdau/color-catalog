@@ -9,15 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var apppleColorCollections: [AppleColorCollection] = []
+    @State var appleColorCollections: [AppleColorCollection] = []
     @State var selectedAppleColorCollection: AppleColorCollection?
     
-    var body: some View {
-        Text("hoge")
-        
-        /*conform to 'RandomAccessCollection'
+    var body: some View {    
         NavigationSplitView {
-            List(apppleColorCollections, selection: $selectedAppleColorCollection) { apppleColorCollection in
+            List(appleColorCollections, selection: $selectedAppleColorCollection) { apppleColorCollection in
                 NavigationLink(value: apppleColorCollection) {
                     Text(apppleColorCollection.title)
                 }
@@ -29,9 +26,8 @@ struct ContentView: View {
                 Text("Pick a color")
             }
         }
-         */
         .onAppear() {
-            self.apppleColorCollections = loadJson()
+            self.appleColorCollections = loadJson()
         }
     }
     
