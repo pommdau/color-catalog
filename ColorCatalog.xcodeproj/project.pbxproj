@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */; };
 		DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */; };
 		DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA032AA0DD94006F20AF /* ContentView.swift */; };
 		DAE5CA062AA0DD95006F20AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA052AA0DD95006F20AF /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorSectionView.swift; sourceTree = "<group>"; };
 		DAE5C9FE2AA0DD94006F20AF /* ColorCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCatalogApp.swift; sourceTree = "<group>"; };
 		DAE5CA032AA0DD94006F20AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */,
 				DAE5CA182AA0EA34006F20AF /* TestView.swift */,
 				DAE5CA032AA0DD94006F20AF /* ContentView.swift */,
+				DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */,
 				DAE5CA152AA0E594006F20AF /* Models */,
 				DAE5CA052AA0DD95006F20AF /* Assets.xcassets */,
 				DAE5CA0A2AA0DD95006F20AF /* ColorCatalog.entitlements */,
@@ -173,6 +176,7 @@
 				DAE5CA172AA0E5A0006F20AF /* AppleColorCollection.swift in Sources */,
 				DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */,
 				DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */,
+				DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

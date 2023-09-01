@@ -13,18 +13,11 @@ struct ContentView: View {
     @State var selectedSection: AppleColorSection?
     
     var body: some View {
-        NavigationSplitView {
-//            List(appleColorCollections, selection: $selectedAppleColorCollection) { apppleColorCollection in
-//                NavigationLink(value: apppleColorCollection) {
-//                    Text(apppleColorCollection.title)
-//                }
-//            }
-            
+        NavigationSplitView {            
             List(selection: $selectedSection) {
                 ForEach(appleColorCollections) { collection in
                     Section(collection.title) {
                         ForEach(collection.sections) { section in
-//                            Text(section.title)
                             NavigationLink(value: section) {
                                 Text(section.title)
                             }
@@ -42,6 +35,9 @@ struct ContentView: View {
 
         .onAppear() {
             self.appleColorCollections = loadJson()
+            if let selectedSection = appleColorCollections.first?.sections.first {
+                self.selectedSection = selectedSection
+            }
         }
     }
     
