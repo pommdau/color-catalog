@@ -34,7 +34,9 @@ struct ContentView: View {
                 }
             }
             .navigationTitle(selectedSection?.title ?? "Color Catalog")
+            .navigationSubtitle(selectedSection == nil ? "" : "\(selectedSection!.colors.count) Colors")
         }
+        
 
         .onAppear() {
             self.appleColorCollections = loadJson()
