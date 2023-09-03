@@ -16,16 +16,10 @@ struct AppleColorSectionView: View {
             Text(section.title)
             List(section.colors) { color in
                 VStack(alignment: .leading) {
-//                    Rectangle()
-//                        .frame(width: 40, height: 40)
-//                        .foregroundColor(Color(nsColor: NSColor(name: color.title)))
-//                        .foregroundColor(createColor(withTitle: color.title))
                     HStack {
                         Text(color.title)
                         Text("\(color.isDeprecated ? "Dep" : "OK")")
                     }
-                    
-//                    Text(color.link)
                 }
             }
         }

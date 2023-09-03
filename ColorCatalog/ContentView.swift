@@ -63,7 +63,9 @@ struct ContentView: View {
             colorCollections.append(colorCollection)
         }
         
-        return colorCollections
+        return colorCollections.sorted { first, second in
+            first.title > second.title
+        }
     }
 }
 
