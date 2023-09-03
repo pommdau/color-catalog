@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct AppleColorSectionView: View {
-    
-    @AppStorage("selected-description-language") var selectedDescriptionLaguage: String = "en"
-    @AppStorage("selected-appearance") var selectedAppearance: String = "system"
-    @AppStorage("searching-keyword") var searchingKeyword: String = ""
-    
+           
     let section: AppleColorSection
     
     var body: some View {
@@ -55,21 +51,7 @@ struct AppleColorSectionView: View {
             }
             .width(min: 0, ideal: 100, max: 100)
         }
-        .toolbar {
-            ToolbarItemGroup(placement: .principal) {
-                Picker("Description Language", selection: $selectedDescriptionLaguage) {
-                    Text("English").tag("en")
-                    Text("Japanese").tag("ja")
-                }
-                .frame(width: 100)
-                Picker("Appearance", selection: $selectedAppearance) {
-                    Text("System").tag("system")
-                    Text("Light").tag("aqua")
-                    Text("Dark").tag("dark")
-                }
-                .frame(width: 100)
-            }
-        }
+        
     }
 }
 

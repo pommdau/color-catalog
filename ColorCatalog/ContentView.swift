@@ -12,6 +12,10 @@ struct ContentView: View {
     @State var appleColorCollections: [AppleColorCollection] = []
     @State var selectedSection: AppleColorSection?
     
+    @AppStorage("selected-description-language") var selectedDescriptionLaguage: String = "en"
+    @AppStorage("selected-appearance") var selectedAppearance: String = "system"
+    @AppStorage("searching-keyword") var searchingKeyword: String = ""
+    
     var body: some View {
         NavigationSplitView {
             List(selection: $selectedSection) {
@@ -36,13 +40,33 @@ struct ContentView: View {
             .navigationTitle(selectedSection?.title ?? "Color Catalog")
             .navigationSubtitle(selectedSection == nil ? "" : "\(selectedSection!.colors.count) Colors")
         }
-        
-
+        .toolbar {
+            ToolbarItemGroup(placement: .principal) {
+                Picker("Description Language", selection: $selectedDescriptionLaguage) {
+                    Text("English").tag("en")
+                    Text("Japanese").tag("ja")
+                }
+                .frame(width: 100)
+                Picker("Appearance", selection: $selectedAppearance) {
+                    Text("System").tag("system")
+                    Text("Light").tag("aqua")
+                    Text("Dark").tag("dark")
+                }
+                .frame(width: 100)
+            }
+        }
+        .searchable(text: $searchingKeyword, prompt: "Search")
+        .onSubmit {
+            print(searchingKeyword)
+        }
         .onAppear() {
             self.appleColorCollections = loadJson()
             if let selectedSection = appleColorCollections.first?.sections.first {
                 self.selectedSection = selectedSection
             }
+        }
+        .onChange(of: selectedAppearance) { newValue in
+            // TODO:
         }
     }
     
