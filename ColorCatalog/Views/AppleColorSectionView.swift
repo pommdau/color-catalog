@@ -35,10 +35,10 @@ struct AppleColorSectionView: View {
                 Text(color.title)
             }
             TableColumn("Description") { color in
-                Text(color.descriptions.first!.description)
+                Text(color.descriptions[1].description)
             }
             TableColumn("Status") { color in
-                Badge(isDeprecated: color.isDeprecated, isBeta: color.isBeta)
+                AnnotationBadge(isDeprecated: color.isDeprecated, isBeta: color.isBeta)
                     .padding(.horizontal)
             }
             .width(min: 0, ideal: 110, max: 110)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Badge: View {
+struct AnnotationBadge: View {
     @State private var size: CGSize = .zero
     let isDeprecated: Bool
     let isBeta: Bool
@@ -61,16 +61,16 @@ struct Badge: View {
 }
 
 #Preview {
-    Badge(isDeprecated: true)
+    AnnotationBadge(isDeprecated: true)
         .padding()
 }
 
 #Preview {
-    Badge(isBeta: true)
+    AnnotationBadge(isBeta: true)
         .padding()
 }
 
 #Preview {
-    Badge()
+    AnnotationBadge()
         .padding()
 }

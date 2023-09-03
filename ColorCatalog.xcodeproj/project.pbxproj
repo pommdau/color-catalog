@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA38D3532AA4F31000B6C60D /* UI Element Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DA38D3502AA4F31000B6C60D /* UI Element Colors.json */; };
+		DA38D3542AA4F31000B6C60D /* Standard Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DA38D3512AA4F31000B6C60D /* Standard Colors.json */; };
+		DA38D3552AA4F31000B6C60D /* NSColor+systemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38D3522AA4F31000B6C60D /* NSColor+systemName.swift */; };
 		DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */; };
-		DAA06E582AA4A595002E0EFB /* Standard Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA06E552AA4A594002E0EFB /* Standard Colors.json */; };
-		DAA06E592AA4A595002E0EFB /* NSColor+systemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA06E562AA4A594002E0EFB /* NSColor+systemName.swift */; };
-		DAA06E5A2AA4A595002E0EFB /* UI Element Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA06E572AA4A595002E0EFB /* UI Element Colors.json */; };
-		DAA06E5D2AA4AAB8002E0EFB /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA06E5C2AA4AAB8002E0EFB /* Badge.swift */; };
+		DAA06E5D2AA4AAB8002E0EFB /* AnnotationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */; };
 		DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */; };
 		DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA032AA0DD94006F20AF /* ContentView.swift */; };
 		DAE5CA062AA0DD95006F20AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA052AA0DD95006F20AF /* Assets.xcassets */; };
@@ -21,11 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA38D3502AA4F31000B6C60D /* UI Element Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "UI Element Colors.json"; path = "Python/result/UI Element Colors.json"; sourceTree = SOURCE_ROOT; };
+		DA38D3512AA4F31000B6C60D /* Standard Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Standard Colors.json"; path = "Python/result/Standard Colors.json"; sourceTree = SOURCE_ROOT; };
+		DA38D3522AA4F31000B6C60D /* NSColor+systemName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSColor+systemName.swift"; path = "Python/result/NSColor+systemName.swift"; sourceTree = SOURCE_ROOT; };
 		DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorSectionView.swift; sourceTree = "<group>"; };
-		DAA06E552AA4A594002E0EFB /* Standard Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Standard Colors.json"; sourceTree = "<group>"; };
-		DAA06E562AA4A594002E0EFB /* NSColor+systemName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+systemName.swift"; sourceTree = "<group>"; };
-		DAA06E572AA4A595002E0EFB /* UI Element Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UI Element Colors.json"; sourceTree = "<group>"; };
-		DAA06E5C2AA4AAB8002E0EFB /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationBadge.swift; sourceTree = "<group>"; };
 		DAE5C9FE2AA0DD94006F20AF /* ColorCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCatalogApp.swift; sourceTree = "<group>"; };
 		DAE5CA032AA0DD94006F20AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */,
-				DAA06E5C2AA4AAB8002E0EFB /* Badge.swift */,
+				DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,9 +99,9 @@
 		DAE5CA142AA0DDB1006F20AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DAA06E562AA4A594002E0EFB /* NSColor+systemName.swift */,
-				DAA06E552AA4A594002E0EFB /* Standard Colors.json */,
-				DAA06E572AA4A595002E0EFB /* UI Element Colors.json */,
+				DA38D3522AA4F31000B6C60D /* NSColor+systemName.swift */,
+				DA38D3512AA4F31000B6C60D /* Standard Colors.json */,
+				DA38D3502AA4F31000B6C60D /* UI Element Colors.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -172,10 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA06E5A2AA4A595002E0EFB /* UI Element Colors.json in Resources */,
 				DAE5CA092AA0DD95006F20AF /* Preview Assets.xcassets in Resources */,
 				DAE5CA062AA0DD95006F20AF /* Assets.xcassets in Resources */,
-				DAA06E582AA4A595002E0EFB /* Standard Colors.json in Resources */,
+				DA38D3532AA4F31000B6C60D /* UI Element Colors.json in Resources */,
+				DA38D3542AA4F31000B6C60D /* Standard Colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,10 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA06E5D2AA4AAB8002E0EFB /* Badge.swift in Sources */,
+				DAA06E5D2AA4AAB8002E0EFB /* AnnotationBadge.swift in Sources */,
+				DA38D3552AA4F31000B6C60D /* NSColor+systemName.swift in Sources */,
 				DAE5CA192AA0EA34006F20AF /* TestView.swift in Sources */,
 				DAE5CA172AA0E5A0006F20AF /* AppleColorCollection.swift in Sources */,
-				DAA06E592AA4A595002E0EFB /* NSColor+systemName.swift in Sources */,
 				DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */,
 				DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */,
 				DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */,

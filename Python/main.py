@@ -9,6 +9,7 @@ def main():
     ]
     for reader in readers:
         reader.load_url()
+        reader.translate_description()
         reader.export_json()
 
     create_nscolor_define_file(readers)

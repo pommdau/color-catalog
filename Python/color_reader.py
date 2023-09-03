@@ -1,11 +1,11 @@
 import time
+from google_translator import LanguageForTranslate, translate
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from dataclasses import dataclass, field
 from collections import OrderedDict
 from typing import Any, Optional
 import json
-from google_translator import translate
 
 
 @dataclass
@@ -57,8 +57,8 @@ class ColorSection():
 
 @dataclass
 class ColorReader():
-    title: str = "UI Element Colors"
-    url: str = "https://developer.apple.com/documentation/appkit/nscolor/ui_element_colors"
+    title: str
+    url: str
     color_sections: list[ColorSection] = field(default_factory=list)
 
     # 途中経過の構造の保存用
@@ -103,7 +103,6 @@ class ColorReader():
         return Color(title=color_title,
                      color_descriptions=[
                          ColorDescription(description=color_description, language="en"),
-                         ColorDescription(description=translate(color_description, "ja"), language="ja")
                      ],
                      type=color_type,
                      is_deprecated=is_deprecated,
@@ -115,7 +114,7 @@ class ColorReader():
         driver = webdriver.Chrome()
         driver.get(self.url)
         # n秒間待機する
-        time.sleep(10)
+        time.sleep(3)
         soup = BeautifulSoup(driver.page_source, "html.parser")
 
         self._load_main_element(soup)
@@ -150,6 +149,21 @@ class ColorReader():
 
         return json_dict
 
+    def translate_description(self):
+        for color_section in self.color_sections:
+            for color in color_section.colors:
+                translation_en: ColorDescription = [description for description in color.color_descriptions if description.language == "en"][0]
+                color.color_descriptions = [translation_en]
+                for language in LanguageForTranslate:
+                    if language == LanguageForTranslate.ENGLISH:
+                        continue
+                    language_value = language.value  # "en" "ja"
+                    color.color_descriptions.append(
+                        ColorDescription(translate(translation_en.description, language_value), 
+                                         language_value)
+                    )
+
     def export_json(self):
         with open(f"result/{self.title}.json", "w") as f:
             json.dump(self._convert_to_json_dict(), f, indent=4, ensure_ascii=False)
+    
