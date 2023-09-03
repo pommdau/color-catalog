@@ -16,6 +16,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879260-systemblue"
                 },
                 {
@@ -30,6 +33,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879266-systembrown"
                 },
                 {
@@ -44,6 +50,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3816005-systemcyan"
                 },
                 {
@@ -58,6 +67,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879265-systemgray"
                 },
                 {
@@ -72,6 +84,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879264-systemgreen"
                 },
                 {
@@ -86,6 +101,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3174920-systemindigo"
                 },
                 {
@@ -100,6 +118,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3816006-systemmint"
                 },
                 {
@@ -114,6 +135,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879263-systemorange"
                 },
                 {
@@ -128,6 +152,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879261-systempink"
                 },
                 {
@@ -142,6 +169,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879259-systempurple"
                 },
                 {
@@ -156,6 +186,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879262-systemred"
                 },
                 {
@@ -170,6 +203,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3174921-systemteal"
                 },
                 {
@@ -184,6 +220,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879267-systemyellow"
                 }
             ]
@@ -203,6 +242,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527217-clear"
                 }
             ]
@@ -222,6 +264,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527194-black"
                 },
                 {
@@ -236,6 +281,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535421-blue"
                 },
                 {
@@ -250,6 +298,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1534013-brown"
                 },
                 {
@@ -264,6 +315,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1529217-cyan"
                 },
                 {
@@ -278,6 +332,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1533739-darkgray"
                 },
                 {
@@ -292,6 +349,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535307-gray"
                 },
                 {
@@ -306,6 +366,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527433-green"
                 },
                 {
@@ -320,6 +383,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535184-lightgray"
                 },
                 {
@@ -334,6 +400,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1529883-magenta"
                 },
                 {
@@ -348,6 +417,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526691-orange"
                 },
                 {
@@ -362,6 +434,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526713-purple"
                 },
                 {
@@ -376,6 +451,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1525063-red"
                 },
                 {
@@ -390,6 +468,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526370-white"
                 },
                 {
@@ -404,6 +485,9 @@
                             "language": "ja"
                         }
                     ],
+                    "type": "NSColor",
+                    "is_deprecated": false,
+                    "is_beta": false,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1524796-yellow"
                 }
             ]

@@ -13,8 +13,8 @@ struct AppleColorDesctiption: Codable, Identifiable, Hashable {
     let description: String
     
     static let sampleData: [AppleColorDesctiption] = [
-        .init(language: "en", description: "English Sample"),
-        .init(language: "ja", description: "Japanese Sample")
+        .init(language: "en", description: "The primary color to use for text labels."),
+        .init(language: "ja", description: "日本語訳が入るよ")
     ]
 }
 
@@ -22,15 +22,34 @@ struct AppleColor: Codable, Identifiable, Hashable {
     var id: String { title }
     let title: String
     let descriptions: [AppleColorDesctiption]
+    let type: String  // "NSColor"
+    let isDeprecated: Bool
+    let isBeta: Bool
     let link: String
     
+    enum CodingKeys: String, CodingKey {
+//        case id
+        case title
+        case descriptions
+        case type
+        case isDeprecated = "is_deprecated"
+        case isBeta = "is_beta"
+        case link
+    }
+    
     static let sampleData: [AppleColor] = [
-        .init(title: "Sample AppleColor1",
+        .init(title: "labelColor",
               descriptions: AppleColorDesctiption.sampleData,
-              link: "https://sample"),
-        .init(title: "Sample AppleColor2",
+              type: "NSColor",
+              isDeprecated: false,
+              isBeta: false,
+              link: "https://developer.apple.com/documentation/appkit/nscolor/1534657-labelcolor"),
+        .init(title: "secondaryLabelColor",
               descriptions: AppleColorDesctiption.sampleData,
-              link: "https://sample")
+              type: "NSColor",
+              isDeprecated: false,
+              isBeta: false,
+              link: "https://developer.apple.com/documentation/appkit/nscolor/1533254-secondarylabelcolor")
     ]
 }
 

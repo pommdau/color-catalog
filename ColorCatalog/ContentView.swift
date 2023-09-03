@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var selectedSection: AppleColorSection?
     
     var body: some View {
-        NavigationSplitView {            
+        NavigationSplitView {
             List(selection: $selectedSection) {
                 ForEach(appleColorCollections) { collection in
                     Section(collection.title) {
@@ -27,7 +27,8 @@ struct ContentView: View {
             }
         } detail: {
             if let selectedSection {
-                Text(selectedSection.title)
+//                Text(selectedSection.title)
+                AppleColorSectionView(section: selectedSection)
             } else {
                 Text("Pick a color")
             }

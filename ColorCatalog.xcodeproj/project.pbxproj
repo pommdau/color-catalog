@@ -8,26 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */; };
+		DAA06E582AA4A595002E0EFB /* Standard Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA06E552AA4A594002E0EFB /* Standard Colors.json */; };
+		DAA06E592AA4A595002E0EFB /* NSColor+systemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA06E562AA4A594002E0EFB /* NSColor+systemName.swift */; };
+		DAA06E5A2AA4A595002E0EFB /* UI Element Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA06E572AA4A595002E0EFB /* UI Element Colors.json */; };
 		DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */; };
 		DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA032AA0DD94006F20AF /* ContentView.swift */; };
 		DAE5CA062AA0DD95006F20AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA052AA0DD95006F20AF /* Assets.xcassets */; };
 		DAE5CA092AA0DD95006F20AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA082AA0DD95006F20AF /* Preview Assets.xcassets */; };
-		DAE5CA122AA0DDB0006F20AF /* Standard Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA102AA0DDB0006F20AF /* Standard Colors.json */; };
-		DAE5CA132AA0DDB0006F20AF /* UI Element Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA112AA0DDB0006F20AF /* UI Element Colors.json */; };
 		DAE5CA172AA0E5A0006F20AF /* AppleColorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA162AA0E5A0006F20AF /* AppleColorCollection.swift */; };
 		DAE5CA192AA0EA34006F20AF /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA182AA0EA34006F20AF /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorSectionView.swift; sourceTree = "<group>"; };
+		DAA06E552AA4A594002E0EFB /* Standard Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Standard Colors.json"; sourceTree = "<group>"; };
+		DAA06E562AA4A594002E0EFB /* NSColor+systemName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+systemName.swift"; sourceTree = "<group>"; };
+		DAA06E572AA4A595002E0EFB /* UI Element Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UI Element Colors.json"; sourceTree = "<group>"; };
 		DAE5C9FE2AA0DD94006F20AF /* ColorCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCatalogApp.swift; sourceTree = "<group>"; };
 		DAE5CA032AA0DD94006F20AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAE5CA052AA0DD95006F20AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAE5CA082AA0DD95006F20AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAE5CA0A2AA0DD95006F20AF /* ColorCatalog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorCatalog.entitlements; sourceTree = "<group>"; };
-		DAE5CA102AA0DDB0006F20AF /* Standard Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Standard Colors.json"; sourceTree = "<group>"; };
-		DAE5CA112AA0DDB0006F20AF /* UI Element Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UI Element Colors.json"; sourceTree = "<group>"; };
 		DAE5CA162AA0E5A0006F20AF /* AppleColorCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorCollection.swift; sourceTree = "<group>"; };
 		DAE5CA182AA0EA34006F20AF /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,8 +88,9 @@
 		DAE5CA142AA0DDB1006F20AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DAE5CA102AA0DDB0006F20AF /* Standard Colors.json */,
-				DAE5CA112AA0DDB0006F20AF /* UI Element Colors.json */,
+				DAA06E562AA4A594002E0EFB /* NSColor+systemName.swift */,
+				DAA06E552AA4A594002E0EFB /* Standard Colors.json */,
+				DAA06E572AA4A595002E0EFB /* UI Element Colors.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -158,10 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE5CA132AA0DDB0006F20AF /* UI Element Colors.json in Resources */,
+				DAA06E5A2AA4A595002E0EFB /* UI Element Colors.json in Resources */,
 				DAE5CA092AA0DD95006F20AF /* Preview Assets.xcassets in Resources */,
 				DAE5CA062AA0DD95006F20AF /* Assets.xcassets in Resources */,
-				DAE5CA122AA0DDB0006F20AF /* Standard Colors.json in Resources */,
+				DAA06E582AA4A595002E0EFB /* Standard Colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +177,7 @@
 			files = (
 				DAE5CA192AA0EA34006F20AF /* TestView.swift in Sources */,
 				DAE5CA172AA0E5A0006F20AF /* AppleColorCollection.swift in Sources */,
+				DAA06E592AA4A595002E0EFB /* NSColor+systemName.swift in Sources */,
 				DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */,
 				DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */,
 				DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */,
@@ -315,6 +319,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikeh1024.ColorCatalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,6 +347,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikeh1024.ColorCatalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";

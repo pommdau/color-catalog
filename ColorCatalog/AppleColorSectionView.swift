@@ -12,7 +12,35 @@ struct AppleColorSectionView: View {
     let section: AppleColorSection
     
     var body: some View {
-        Text(section.title)
+        VStack {
+            Text(section.title)
+            List(section.colors) { color in
+                VStack(alignment: .leading) {
+//                    Rectangle()
+//                        .frame(width: 40, height: 40)
+//                        .foregroundColor(Color(nsColor: NSColor(name: color.title)))
+//                        .foregroundColor(createColor(withTitle: color.title))
+                    HStack {
+                        Text(color.title)
+                        Text("\(color.isDeprecated ? "Dep" : "OK")")
+                    }
+                    
+//                    Text(color.link)
+                }
+            }
+        }
+    }
+    
+    func createColor(withTitle title: String) -> Color {
+//        guard let nsColor = NSColor(named: NSColor.Name(title)) else {
+//            return .clear
+//        }
+//        print(NSColor.labelColor.colorNameComponent)
+        if let nsColor = NSColor(named: NSColor.Name("labelColor")) {
+            return Color(nsColor: nsColor)
+        }
+        
+        return .red
     }
 }
 
