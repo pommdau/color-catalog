@@ -41,14 +41,14 @@ struct AppleColor: Codable, Identifiable, Hashable {
         .init(title: "labelColor",
               descriptions: AppleColorDesctiption.sampleData,
               type: "NSColor",
-              isDeprecated: false,
+              isDeprecated: true,
               isBeta: false,
               link: "https://developer.apple.com/documentation/appkit/nscolor/1534657-labelcolor"),
         .init(title: "secondaryLabelColor",
               descriptions: AppleColorDesctiption.sampleData,
               type: "NSColor",
               isDeprecated: false,
-              isBeta: false,
+              isBeta: true,
               link: "https://developer.apple.com/documentation/appkit/nscolor/1533254-secondarylabelcolor")
     ]
 }

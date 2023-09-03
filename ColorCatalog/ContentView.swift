@@ -26,12 +26,14 @@ struct ContentView: View {
                 }
             }
         } detail: {
-            if let selectedSection {
-//                Text(selectedSection.title)
-                AppleColorSectionView(section: selectedSection)
-            } else {
-                Text("Pick a color")
+            Group {
+                if let selectedSection {
+                    AppleColorSectionView(section: selectedSection)
+                } else {
+                    Text("Pick a color")
+                }
             }
+            .navigationTitle(selectedSection?.title ?? "Color Catalog")
         }
 
         .onAppear() {
