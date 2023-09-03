@@ -2,6 +2,7 @@
 import AppKit
 
 extension NSColor {
+            
     static func systemName(_ name: String) -> Any? {
         let allColors: [String: Any] = [
             "labelColor": NSColor.labelColor as NSColor,
@@ -91,7 +92,8 @@ extension NSColor {
             "yellow": NSColor.yellow as NSColor,
 
         ]
-        let cleanedName = name.replacingOccurrences(of: " ", with: "").lowercased()
+        let cleanedName = name.replacingOccurrences(of: " ", with: "")
+//            .lowercased()
         
         return allColors[cleanedName]
     }

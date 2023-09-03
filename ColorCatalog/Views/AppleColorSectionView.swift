@@ -17,24 +17,16 @@ struct AppleColorSectionView: View {
             List(section.colors) { color in
                 VStack(alignment: .leading) {
                     HStack {
+                        Circle()
+                            .frame(width: 16, height: 16)
+                            .foregroundColor(Color(nsColor: NSColor.systemName(color.title) as? NSColor ?? NSColor.red))
                         Text(color.title)
-                        Text("\(color.isDeprecated ? "Dep" : "OK")")
+                        Badge(isDeprecated: color.isDeprecated,
+                              isBeta: color.isBeta)
                     }
                 }
             }
         }
-    }
-    
-    func createColor(withTitle title: String) -> Color {
-//        guard let nsColor = NSColor(named: NSColor.Name(title)) else {
-//            return .clear
-//        }
-//        print(NSColor.labelColor.colorNameComponent)
-        if let nsColor = NSColor(named: NSColor.Name("labelColor")) {
-            return Color(nsColor: nsColor)
-        }
-        
-        return .red
     }
 }
 
