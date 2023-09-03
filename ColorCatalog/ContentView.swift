@@ -7,6 +7,39 @@
 
 import SwiftUI
 
+enum Appearance: String, CaseIterable, Identifiable {
+        
+    /// refs: https://developer.apple.com/documentation/appkit/nsappearance/name/1534115-aqua
+    case darkAqua
+    case vibrantLight
+    case vibrantDark
+    case accessibilityHighContrastAqua
+    case accessibilityHighContrastDarkAqua
+    case accessibilityHighContrastVibrantLight
+    case accessibilityHighContrastVibrantDark
+    
+    var id: String { self.rawValue }
+    
+    var nsAppearance: NSAppearance? {
+        switch self {
+        case .darkAqua:
+            return NSAppearance(named: .darkAqua)
+        case .vibrantLight:
+            return NSAppearance(named: .vibrantLight)
+        case .vibrantDark:
+            return NSAppearance(named: .vibrantDark)
+        case .accessibilityHighContrastAqua:
+            return NSAppearance(named: .accessibilityHighContrastAqua)
+        case .accessibilityHighContrastDarkAqua:
+            return NSAppearance(named: .accessibilityHighContrastDarkAqua)
+        case .accessibilityHighContrastVibrantLight:
+            return NSAppearance(named: .accessibilityHighContrastVibrantLight)
+        case .accessibilityHighContrastVibrantDark:
+            return NSAppearance(named: .accessibilityHighContrastVibrantDark)
+        }
+    }
+}
+
 struct ContentView: View {
     
     @State var appleColorCollections: [AppleColorCollection] = []
@@ -14,7 +47,7 @@ struct ContentView: View {
     
     @AppStorage("selected-description-language") var selectedDescriptionLaguage: String = "en"
     @AppStorage("selected-appearance") var selectedAppearance: String = "system"
-    @AppStorage("searching-keyword") var searchingKeyword: String = ""
+    @AppStorage("searching-keyword") var searchingKeyword: String = Appearance.allCases.first?.rawValue ?? ""
     
     var body: some View {
         NavigationSplitView {
@@ -48,9 +81,9 @@ struct ContentView: View {
                 }
                 .frame(width: 100)
                 Picker("Appearance", selection: $selectedAppearance) {
-                    Text("System").tag("system")
-                    Text("Light").tag("aqua")
-                    Text("Dark").tag("dark")
+                    ForEach(Appearance.allCases) { appearance in
+                        Text(appearance.rawValue).tag(appearance.rawValue)
+                    }
                 }
                 .frame(width: 100)
             }
