@@ -9,6 +9,10 @@ import SwiftUI
 
 struct AppleColorSectionView: View {
     
+    @AppStorage("selected-description-language") var selectedDescriptionLaguage: String = "en"
+    @AppStorage("selected-appearance") var selectedAppearance: String = "system"
+    @AppStorage("searching-keyword") var searchingKeyword: String = ""
+    
     let section: AppleColorSection
     
     var body: some View {
@@ -51,25 +55,21 @@ struct AppleColorSectionView: View {
             }
             .width(min: 0, ideal: 100, max: 100)
         }
-        
-        /*
-        VStack(alignment: .leading) {
-            Text(section.title)
-                .font(.title3)
-            List(section.colors) { color in
-                HStack {
-                    Circle()
-                        .frame(width: 16, height: 16)
-                        .foregroundColor(Color(nsColor: NSColor.systemName(color.title) as? NSColor ?? NSColor.red))
-                    Text(color.title)
-                    Badge(isDeprecated: color.isDeprecated,
-                          isBeta: color.isBeta)
+        .toolbar {
+            ToolbarItemGroup(placement: .principal) {
+                Picker("Description Language", selection: $selectedDescriptionLaguage) {
+                    Text("English").tag("en")
+                    Text("Japanese").tag("ja")
                 }
-                .background(Color(nsColor: .windowBackgroundColor))
+                .frame(width: 100)
+                Picker("Appearance", selection: $selectedAppearance) {
+                    Text("System").tag("system")
+                    Text("Light").tag("aqua")
+                    Text("Dark").tag("dark")
+                }
+                .frame(width: 100)
             }
         }
-        .background(Color(nsColor: .windowBackgroundColor))
-         */
     }
 }
 
