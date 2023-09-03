@@ -12,21 +12,22 @@ struct AppleColorSectionView: View {
     let section: AppleColorSection
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text(section.title)
+                .font(.title3)
             List(section.colors) { color in
-                VStack(alignment: .leading) {
-                    HStack {
-                        Circle()
-                            .frame(width: 16, height: 16)
-                            .foregroundColor(Color(nsColor: NSColor.systemName(color.title) as? NSColor ?? NSColor.red))
-                        Text(color.title)
-                        Badge(isDeprecated: color.isDeprecated,
-                              isBeta: color.isBeta)
-                    }
+                HStack {
+                    Circle()
+                        .frame(width: 16, height: 16)
+                        .foregroundColor(Color(nsColor: NSColor.systemName(color.title) as? NSColor ?? NSColor.red))
+                    Text(color.title)
+                    Badge(isDeprecated: color.isDeprecated,
+                          isBeta: color.isBeta)
                 }
+                .background(Color(nsColor: .windowBackgroundColor))
             }
         }
+        .background(Color(nsColor: .windowBackgroundColor))
     }
 }
 
