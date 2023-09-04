@@ -12,6 +12,7 @@
 		DA38D3552AA4F31000B6C60D /* NSColor+systemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38D3522AA4F31000B6C60D /* NSColor+systemName.swift */; };
 		DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */; };
 		DA9000A62AA55EFB00294F1B /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000A52AA55EFB00294F1B /* Appearance.swift */; };
+		DA9000A92AA5645800294F1B /* AppleColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000A82AA5645800294F1B /* AppleColorController.swift */; };
 		DAA06E5D2AA4AAB8002E0EFB /* AnnotationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */; };
 		DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */; };
 		DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA032AA0DD94006F20AF /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 		DA38D3522AA4F31000B6C60D /* NSColor+systemName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSColor+systemName.swift"; path = "Python/result/NSColor+systemName.swift"; sourceTree = SOURCE_ROOT; };
 		DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorSectionView.swift; sourceTree = "<group>"; };
 		DA9000A52AA55EFB00294F1B /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		DA9000A82AA5645800294F1B /* AppleColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorController.swift; sourceTree = "<group>"; };
 		DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationBadge.swift; sourceTree = "<group>"; };
 		DAE5C9FE2AA0DD94006F20AF /* ColorCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCatalogApp.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA9000A72AA5644100294F1B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA9000A82AA5645800294F1B /* AppleColorController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		DAA06E5B2AA4A8A8002E0EFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		DAE5CA002AA0DD94006F20AF /* ColorCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				DA9000A72AA5644100294F1B /* Controllers */,
 				DAE5CA142AA0DDB1006F20AF /* Resources */,
 				DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */,
 				DAE5CA182AA0EA34006F20AF /* TestView.swift */,
@@ -194,6 +205,7 @@
 				DA38D3552AA4F31000B6C60D /* NSColor+systemName.swift in Sources */,
 				DAE5CA192AA0EA34006F20AF /* TestView.swift in Sources */,
 				DAE5CA172AA0E5A0006F20AF /* AppleColorCollection.swift in Sources */,
+				DA9000A92AA5645800294F1B /* AppleColorController.swift in Sources */,
 				DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */,
 				DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */,
 				DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */,

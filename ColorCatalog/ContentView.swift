@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var appleColorCollections: [AppleColorCollection] = []
-    @State var selectedSection: AppleColorSection?
+    @StateObject private var appleColorController = AppleColorController()
     
     @AppStorage("selected-description-language") var selectedDescriptionLaguage: String = "en"
     @AppStorage("selected-appearance") var selectedAppearance: String = "system"
@@ -18,8 +17,8 @@ struct ContentView: View {
     
     var body: some View {
         NavigationSplitView {
-            List(selection: $selectedSection) {
-                ForEach(appleColorCollections) { collection in
+            List(selection: $appleColorController.selectedSection) {
+                ForEach(appleColorController.appleColorCollections) { collection in
                     Section(collection.title) {
                         ForEach(collection.sections) { section in
                             NavigationLink(value: section) {
@@ -30,15 +29,9 @@ struct ContentView: View {
                 }
             }
         } detail: {
-            Group {
-                if let selectedSection {
-                    AppleColorSectionView(section: selectedSection)
-                } else {
-                    Text("Pick a color")
-                }
-            }
-            .navigationTitle(selectedSection?.title ?? "Color Catalog")
-            .navigationSubtitle(selectedSection == nil ? "" : "\(selectedSection!.colors.count) Colors")
+            AppleColorSectionView(section: appleColorController.selectedSection)
+                .navigationTitle(appleColorController.selectedSection.title)
+//            .navigationSubtitleappleColorController(appleColorController.selectedSection == nil ? "" : "\(appleColorController.selectedSection!.colors.count) Colors")
         }
         .toolbar {
             ToolbarItemGroup(placement: .principal) {
@@ -66,56 +59,11 @@ struct ContentView: View {
             print(searchingKeyword)
         }
         .onAppear() {
-            self.appleColorCollections = loadJson()
-            if let selectedSection = appleColorCollections.first?.sections.first {
-                self.selectedSection = selectedSection
-            }
+
         }
     }
     
-    private func loadJson() -> [AppleColorCollection] {
-        guard
-            let resourceURL = Bundle.main.resourceURL,
-            let jsonFiles = try? FileManager.default.contentsOfDirectory(atPath: resourceURL.path).filter({ $0.hasSuffix(".json") }),
-            jsonFiles.count > 0
-            else {
-            return []
-        }
-        
-        var colorCollections: [AppleColorCollection] = []
-        let jsonFileURLs = jsonFiles.map { resourceURL.appendingPathComponent($0) }
-        for jsonFileURL in jsonFileURLs {
-            guard let jsonString = try? String(contentsOf: jsonFileURL),
-                  let jsonData = jsonString.data(using: .utf8),
-                  let colorCollection = try? JSONDecoder().decode(AppleColorCollection.self, from: jsonData)
-            else {
-                return []
-            }
-            colorCollections.append(colorCollection)
-        }
-        colorCollections.sort { first, second in
-            first.title > second.title
-        }
-        colorCollections.insert(createAllAppleColorSection(collections: colorCollections), at: 0)
-        
-        return colorCollections
-    }
     
-    private func createAllAppleColorSection(collections: [AppleColorCollection]) -> AppleColorCollection {
-        
-        var allColors: [AppleColor] = []
-        for collection in collections {
-            for section in collection.sections {
-                allColors += section.colors
-            }
-        }
-        
-        return AppleColorCollection(
-            title: "All",
-            sections: [
-                AppleColorSection(title: "All Colors", colors: allColors)
-            ])
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
