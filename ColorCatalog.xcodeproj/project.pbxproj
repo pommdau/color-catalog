@@ -10,7 +10,6 @@
 		DA38D3532AA4F31000B6C60D /* UI Element Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DA38D3502AA4F31000B6C60D /* UI Element Colors.json */; };
 		DA38D3542AA4F31000B6C60D /* Standard Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DA38D3512AA4F31000B6C60D /* Standard Colors.json */; };
 		DA38D3552AA4F31000B6C60D /* NSColor+systemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38D3522AA4F31000B6C60D /* NSColor+systemName.swift */; };
-		DA38D3572AA4F50800B6C60D /* AppleColorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38D3562AA4F50800B6C60D /* AppleColorRow.swift */; };
 		DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */; };
 		DA9000A62AA55EFB00294F1B /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000A52AA55EFB00294F1B /* Appearance.swift */; };
 		DAA06E5D2AA4AAB8002E0EFB /* AnnotationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */; };
@@ -26,7 +25,6 @@
 		DA38D3502AA4F31000B6C60D /* UI Element Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "UI Element Colors.json"; path = "Python/result/UI Element Colors.json"; sourceTree = SOURCE_ROOT; };
 		DA38D3512AA4F31000B6C60D /* Standard Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Standard Colors.json"; path = "Python/result/Standard Colors.json"; sourceTree = SOURCE_ROOT; };
 		DA38D3522AA4F31000B6C60D /* NSColor+systemName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSColor+systemName.swift"; path = "Python/result/NSColor+systemName.swift"; sourceTree = SOURCE_ROOT; };
-		DA38D3562AA4F50800B6C60D /* AppleColorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorRow.swift; sourceTree = "<group>"; };
 		DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorSectionView.swift; sourceTree = "<group>"; };
 		DA9000A52AA55EFB00294F1B /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationBadge.swift; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */,
-				DA38D3562AA4F50800B6C60D /* AppleColorRow.swift */,
 				DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */,
 			);
 			path = Views;
@@ -200,7 +197,6 @@
 				DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */,
 				DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */,
 				DA78E6E32AA1CC3E0044EC9E /* AppleColorSectionView.swift in Sources */,
-				DA38D3572AA4F50800B6C60D /* AppleColorRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

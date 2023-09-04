@@ -96,8 +96,25 @@ struct ContentView: View {
         colorCollections.sort { first, second in
             first.title > second.title
         }
+        colorCollections.insert(createAllAppleColorSection(collections: colorCollections), at: 0)
         
         return colorCollections
+    }
+    
+    private func createAllAppleColorSection(collections: [AppleColorCollection]) -> AppleColorCollection {
+        
+        var allColors: [AppleColor] = []
+        for collection in collections {
+            for section in collection.sections {
+                allColors += section.colors
+            }
+        }
+        
+        return AppleColorCollection(
+            title: "All",
+            sections: [
+                AppleColorSection(title: "All Colors", colors: allColors)
+            ])
     }
 }
 

@@ -31,12 +31,15 @@ struct AppleColorSectionView: View {
                 }
             }
             .width(min: 0, ideal: 20, max: 20)
+            
             TableColumn("Name") { color in
                 Text(color.title)
             }
+            
             TableColumn("Description") { color in
                 Text(color.descriptions[1].description)
             }
+            
             TableColumn("Status") { color in
                 AnnotationBadge(isDeprecated: color.isDeprecated, isBeta: color.isBeta)
                     .padding(.horizontal)
