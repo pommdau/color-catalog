@@ -10,6 +10,7 @@ import SwiftUI
 struct AppleColorSectionView: View {
            
     let colors: [AppleColor]
+    let language: Language
     
     var body: some View {
         
@@ -37,7 +38,11 @@ struct AppleColorSectionView: View {
             }
             
             TableColumn("Description") { color in
-                Text(color.descriptions[1].description)
+                if let description = color.descriptions.first(where: { $0.language == language.code })?.description {
+                    Text(description)
+                } else {
+                    Text("")
+                }
             }
             
             TableColumn("Status") { color in
@@ -59,6 +64,6 @@ struct AppleColorSectionView: View {
 
 //struct AppleColorSectionView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        AppleColorSectionView(section: AppleColorSection.sampleData[1])
+//        AppleColorSectionView(colors: AppleColor.sampleData)
 //    }
 //}

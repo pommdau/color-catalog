@@ -11,7 +11,7 @@ struct ContentView: View {
     
     @StateObject private var appleColorController = AppleColorController()
     
-    @AppStorage("selected-description-language") var selectedDescriptionLaguage: String = "en"
+    @AppStorage("selected-description-language") var selectedDescriptionLaguage: Language = .english
     @AppStorage("selected-appearance") var selectedAppearance: String = "system"
     
     var body: some View {
@@ -28,15 +28,17 @@ struct ContentView: View {
                 }
             }
         } detail: {
-            AppleColorSectionView(colors: appleColorController.selectedSectionColors)
+            AppleColorSectionView(colors: appleColorController.selectedSectionColors,
+                                  language: selectedDescriptionLaguage)
                 .navigationTitle(appleColorController.selectedSection.title)
                 .navigationSubtitle("\(appleColorController.selectedSectionColors.count) Colors")
         }
         .toolbar {
             ToolbarItemGroup(placement: .principal) {
                 Picker("Description Language", selection: $selectedDescriptionLaguage) {
-                    Text("English").tag("en")
-                    Text("Japanese").tag("ja")
+                    ForEach(Language.allCases) { language in
+                        Text(language.rawValue).tag(language)
+                    }
                 }
                 .frame(width: 100)
                 Picker("Appearance", selection: $selectedAppearance) {
