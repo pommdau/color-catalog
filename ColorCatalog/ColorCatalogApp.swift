@@ -12,6 +12,9 @@ struct ColorCatalogApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onDisappear {
+                    NSApplication.shared.terminate(self)
+                }
         }
     }
 }

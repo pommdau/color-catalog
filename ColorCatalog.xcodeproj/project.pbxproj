@@ -15,6 +15,7 @@
 		DA9000A92AA5645800294F1B /* AppleColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9000A82AA5645800294F1B /* AppleColorController.swift */; };
 		DAA06E5D2AA4AAB8002E0EFB /* AnnotationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */; };
 		DAA14E182AA56B4500E48ADD /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA14E172AA56B4500E48ADD /* Language.swift */; };
+		DAA14E1A2AA5752700E48ADD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAA14E192AA5752700E48ADD /* README.md */; };
 		DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */; };
 		DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA032AA0DD94006F20AF /* ContentView.swift */; };
 		DAE5CA062AA0DD95006F20AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA052AA0DD95006F20AF /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		DA9000A82AA5645800294F1B /* AppleColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorController.swift; sourceTree = "<group>"; };
 		DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationBadge.swift; sourceTree = "<group>"; };
 		DAA14E172AA56B4500E48ADD /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		DAA14E192AA5752700E48ADD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAE5C9FE2AA0DD94006F20AF /* ColorCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCatalogApp.swift; sourceTree = "<group>"; };
 		DAE5CA032AA0DD94006F20AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		DAA06E5B2AA4A8A8002E0EFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAE5CA032AA0DD94006F20AF /* ContentView.swift */,
 				DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */,
 				DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */,
 			);
@@ -71,6 +74,7 @@
 		DAE5C9F52AA0DD94006F20AF = {
 			isa = PBXGroup;
 			children = (
+				DAA14E192AA5752700E48ADD /* README.md */,
 				DAE5CA002AA0DD94006F20AF /* ColorCatalog */,
 				DAE5C9FF2AA0DD94006F20AF /* Products */,
 			);
@@ -87,10 +91,9 @@
 		DAE5CA002AA0DD94006F20AF /* ColorCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */,
 				DA9000A72AA5644100294F1B /* Controllers */,
 				DAE5CA142AA0DDB1006F20AF /* Resources */,
-				DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */,
-				DAE5CA032AA0DD94006F20AF /* ContentView.swift */,
 				DAA06E5B2AA4A8A8002E0EFB /* Views */,
 				DAE5CA152AA0E594006F20AF /* Models */,
 				DAE5CA052AA0DD95006F20AF /* Assets.xcassets */,
@@ -188,6 +191,7 @@
 			files = (
 				DAE5CA092AA0DD95006F20AF /* Preview Assets.xcassets in Resources */,
 				DAE5CA062AA0DD95006F20AF /* Assets.xcassets in Resources */,
+				DAA14E1A2AA5752700E48ADD /* README.md in Resources */,
 				DA38D3532AA4F31000B6C60D /* UI Element Colors.json in Resources */,
 				DA38D3542AA4F31000B6C60D /* Standard Colors.json in Resources */,
 			);

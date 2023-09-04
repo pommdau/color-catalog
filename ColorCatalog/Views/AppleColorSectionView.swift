@@ -18,20 +18,22 @@ struct AppleColorSectionView: View {
             TableColumn("") { color in
                 if color.isBeta {
                     Image(systemName: "exclamationmark.triangle.fill")
+                        .resizable()
+                        .scaledToFit()
                         .foregroundColor(Color(nsColor: .systemYellow))
-                        .frame(width: 16, height: 16)
+                        .frame(width: 50, height: 16, alignment: .center)
                         .help("Can't preview the beta color")
                 } else {
                     ZStack {
                         Color(nsColor: .controlBackgroundColor)
                             .padding(-4)
-                        Circle()
-                            .frame(width: 16, height: 16)
+                        Rectangle()
+                            .frame(width: 42, height: 16)
                             .foregroundColor(Color(nsColor: NSColor.systemName(color.title) as? NSColor ?? NSColor.clear))
                     }
                 }
             }
-            .width(min: 0, ideal: 20, max: 20)
+            .width(50)
             
             TableColumn("Name") { color in
                 Text(color.title)

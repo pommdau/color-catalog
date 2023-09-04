@@ -12,7 +12,7 @@ struct ContentView: View {
     @StateObject private var appleColorController = AppleColorController()
     
     @AppStorage("selected-description-language") var selectedDescriptionLaguage: Language = .english
-    @AppStorage("selected-appearance") var selectedAppearance: String = "system"
+    @AppStorage("selected-appearance") var selectedAppearance: Appearance = .aqua
     
     var body: some View {
         NavigationSplitView {
@@ -43,16 +43,20 @@ struct ContentView: View {
                 .frame(width: 100)
                 Picker("Appearance", selection: $selectedAppearance) {
                     ForEach(Appearance.allCases) { appearance in
-                        Text(appearance.rawValue).tag(appearance.rawValue)
+                        Text(appearance.rawValue).tag(appearance)
                     }
                 }
                 .frame(width: 100)
             }
         }
         .searchable(text: $appleColorController.searchingKeyword, prompt: "Search")
+
         .onChange(of: selectedAppearance) { newValue in
-            // TODO:
-            print(newValue)
+            NSApplication.shared.appearance = selectedAppearance.nsAppearance
+        }
+        .onAppear {
+            // macOS14+でonChange(of:initial:_:)が使えるようになったら不要になる
+            NSApplication.shared.appearance = selectedAppearance.nsAppearance
         }
     }
     
