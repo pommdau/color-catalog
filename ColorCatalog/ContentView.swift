@@ -7,39 +7,6 @@
 
 import SwiftUI
 
-enum Appearance: String, CaseIterable, Identifiable {
-        
-    /// refs: https://developer.apple.com/documentation/appkit/nsappearance/name/1534115-aqua
-    case darkAqua
-    case vibrantLight
-    case vibrantDark
-    case accessibilityHighContrastAqua
-    case accessibilityHighContrastDarkAqua
-    case accessibilityHighContrastVibrantLight
-    case accessibilityHighContrastVibrantDark
-    
-    var id: String { self.rawValue }
-    
-    var nsAppearance: NSAppearance? {
-        switch self {
-        case .darkAqua:
-            return NSAppearance(named: .darkAqua)
-        case .vibrantLight:
-            return NSAppearance(named: .vibrantLight)
-        case .vibrantDark:
-            return NSAppearance(named: .vibrantDark)
-        case .accessibilityHighContrastAqua:
-            return NSAppearance(named: .accessibilityHighContrastAqua)
-        case .accessibilityHighContrastDarkAqua:
-            return NSAppearance(named: .accessibilityHighContrastDarkAqua)
-        case .accessibilityHighContrastVibrantLight:
-            return NSAppearance(named: .accessibilityHighContrastVibrantLight)
-        case .accessibilityHighContrastVibrantDark:
-            return NSAppearance(named: .accessibilityHighContrastVibrantDark)
-        }
-    }
-}
-
 struct ContentView: View {
     
     @State var appleColorCollections: [AppleColorCollection] = []
@@ -92,14 +59,17 @@ struct ContentView: View {
         .onSubmit {
             print(searchingKeyword)
         }
+        .onChange(of: selectedAppearance) { newValue in
+            // TODO:
+        }
+        .onChange(of: searchingKeyword) { newValue in
+            print(searchingKeyword)
+        }
         .onAppear() {
             self.appleColorCollections = loadJson()
             if let selectedSection = appleColorCollections.first?.sections.first {
                 self.selectedSection = selectedSection
             }
-        }
-        .onChange(of: selectedAppearance) { newValue in
-            // TODO:
         }
     }
     
@@ -123,10 +93,11 @@ struct ContentView: View {
             }
             colorCollections.append(colorCollection)
         }
-        
-        return colorCollections.sorted { first, second in
+        colorCollections.sort { first, second in
             first.title > second.title
         }
+        
+        return colorCollections
     }
 }
 
