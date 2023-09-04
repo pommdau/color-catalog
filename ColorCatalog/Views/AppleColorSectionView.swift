@@ -9,11 +9,11 @@ import SwiftUI
 
 struct AppleColorSectionView: View {
            
-    let section: AppleColorSection
+    let colors: [AppleColor]
     
     var body: some View {
         
-        Table(section.colors) {
+        Table(colors) {
             TableColumn("") { color in
                 if color.isBeta {
                     Image(systemName: "exclamationmark.triangle.fill")
@@ -54,12 +54,11 @@ struct AppleColorSectionView: View {
             }
             .width(min: 0, ideal: 100, max: 100)
         }
-        
     }
 }
 
-struct AppleColorSectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppleColorSectionView(section: AppleColorSection.sampleData[1])
-    }
-}
+//struct AppleColorSectionView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AppleColorSectionView(section: AppleColorSection.sampleData[1])
+//    }
+//}

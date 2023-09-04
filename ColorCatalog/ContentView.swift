@@ -13,7 +13,6 @@ struct ContentView: View {
     
     @AppStorage("selected-description-language") var selectedDescriptionLaguage: String = "en"
     @AppStorage("selected-appearance") var selectedAppearance: String = "system"
-    @AppStorage("searching-keyword") var searchingKeyword: String = Appearance.allCases.first?.rawValue ?? ""
     
     var body: some View {
         NavigationSplitView {
@@ -29,9 +28,9 @@ struct ContentView: View {
                 }
             }
         } detail: {
-            AppleColorSectionView(section: appleColorController.selectedSection)
+            AppleColorSectionView(colors: appleColorController.selectedSectionColors)
                 .navigationTitle(appleColorController.selectedSection.title)
-//            .navigationSubtitleappleColorController(appleColorController.selectedSection == nil ? "" : "\(appleColorController.selectedSection!.colors.count) Colors")
+                .navigationSubtitle("\(appleColorController.selectedSectionColors.count) Colors")
         }
         .toolbar {
             ToolbarItemGroup(placement: .principal) {
@@ -48,18 +47,10 @@ struct ContentView: View {
                 .frame(width: 100)
             }
         }
-        .searchable(text: $searchingKeyword, prompt: "Search")
-        .onSubmit {
-            print(searchingKeyword)
-        }
+        .searchable(text: $appleColorController.searchingKeyword, prompt: "Search")
         .onChange(of: selectedAppearance) { newValue in
             // TODO:
-        }
-        .onChange(of: searchingKeyword) { newValue in
-            print(searchingKeyword)
-        }
-        .onAppear() {
-
+            print(newValue)
         }
     }
     

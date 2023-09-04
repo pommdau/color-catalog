@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 class AppleColorController: ObservableObject {
         
@@ -14,6 +15,20 @@ class AppleColorController: ObservableObject {
     
     @Published var appleColorCollections: [AppleColorCollection]
     @Published var selectedSection: AppleColorSection
+    @Published var searchingKeyword: String
+    
+    var selectedSectionColors: [AppleColor] {
+        if searchingKeyword.isEmpty {
+            return selectedSection.colors
+        }
+        
+        return selectedSection.colors.compactMap { color in
+            if color.title.lowercased().contains(searchingKeyword.lowercased()) {
+                return color
+            }
+            return nil
+        }
+    }
     
     // MARK: - LifeCycle
     
@@ -21,6 +36,7 @@ class AppleColorController: ObservableObject {
         let appleColorCollections = Self.loadJson()
         self.appleColorCollections = Self.loadJson()
         self.selectedSection = appleColorCollections.first!.sections.first!
+        self.searchingKeyword = ""
     }
     
     // MARK: - Helpers
