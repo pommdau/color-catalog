@@ -1,4 +1,4 @@
-# color-catalog
+# ColorCatalog.app
 
 <img width="240" alt="Icon" src="https://github.com/pommdau/color-catalog/assets/29433103/332d26fa-5c35-4ec3-b1b2-0423abfc8a3b">
 
