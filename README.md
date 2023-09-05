@@ -9,6 +9,6 @@
 
 # Screenshots
 
-<img width="1523" alt="image" src="https://github.com/pommdau/color-catalog/assets/29433103/93a28728-7886-4241-9e96-75690a67375c">
+<img width="1531" alt="image" src="https://github.com/pommdau/color-catalog/assets/29433103/466868cc-f842-4807-a9ba-fbaf14ea97cc">
 
-<img width="1523" alt="image" src="https://github.com/pommdau/color-catalog/assets/29433103/b06f5df0-e74e-4ad7-b745-8dbb22006eb1">
+<img width="1531" alt="image" src="https://github.com/pommdau/color-catalog/assets/29433103/21e8fd7c-f3b5-40e7-9c61-ab49bb4f70de">
