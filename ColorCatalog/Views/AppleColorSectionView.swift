@@ -16,22 +16,7 @@ struct AppleColorSectionView: View {
         
         Table(colors) {
             TableColumn("") { color in
-                if color.isBeta {
-                    Image(systemName: "exclamationmark.triangle.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .foregroundColor(Color(nsColor: .systemYellow))
-                        .frame(width: 50, height: 16, alignment: .center)
-                        .help("Can't preview the beta color")
-                } else {
-                    ZStack {
-                        Color(nsColor: .controlBackgroundColor)
-                            .padding(-4)
-                        Rectangle()
-                            .frame(width: 42, height: 16)
-                            .foregroundColor(Color(nsColor: NSColor.systemName(color.title) as? NSColor ?? NSColor.clear))
-                    }
-                }
+                ColorPreviewCell(appleColor: color)
             }
             .width(50)
             

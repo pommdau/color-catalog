@@ -16,6 +16,7 @@
 		DAA06E5D2AA4AAB8002E0EFB /* AnnotationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */; };
 		DAA14E182AA56B4500E48ADD /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA14E172AA56B4500E48ADD /* Language.swift */; };
 		DAA14E1A2AA5752700E48ADD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAA14E192AA5752700E48ADD /* README.md */; };
+		DAD02BE42AA6E98E00664C66 /* ColorPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD02BE32AA6E98E00664C66 /* ColorPreviewCell.swift */; };
 		DAE5CA022AA0DD94006F20AF /* ColorCatalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */; };
 		DAE5CA042AA0DD94006F20AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5CA032AA0DD94006F20AF /* ContentView.swift */; };
 		DAE5CA062AA0DD95006F20AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE5CA052AA0DD95006F20AF /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationBadge.swift; sourceTree = "<group>"; };
 		DAA14E172AA56B4500E48ADD /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		DAA14E192AA5752700E48ADD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAD02BE32AA6E98E00664C66 /* ColorPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPreviewCell.swift; sourceTree = "<group>"; };
 		DAE5C9FE2AA0DD94006F20AF /* ColorCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE5CA012AA0DD94006F20AF /* ColorCatalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCatalogApp.swift; sourceTree = "<group>"; };
 		DAE5CA032AA0DD94006F20AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				DAE5CA032AA0DD94006F20AF /* ContentView.swift */,
 				DA78E6E22AA1CC3E0044EC9E /* AppleColorSectionView.swift */,
 				DAA06E5C2AA4AAB8002E0EFB /* AnnotationBadge.swift */,
+				DAD02BE32AA6E98E00664C66 /* ColorPreviewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD02BE42AA6E98E00664C66 /* ColorPreviewCell.swift in Sources */,
 				DAA06E5D2AA4AAB8002E0EFB /* AnnotationBadge.swift in Sources */,
 				DA9000A62AA55EFB00294F1B /* Appearance.swift in Sources */,
 				DA38D3552AA4F31000B6C60D /* NSColor+systemName.swift in Sources */,
@@ -346,13 +350,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikeh1024.ColorCatalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -374,13 +379,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikeh1024.ColorCatalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
