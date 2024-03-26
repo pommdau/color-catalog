@@ -47,6 +47,16 @@ class Color:
     def is_desprecated(self) -> bool:
         return False
 
+    @property
+    def link(self) -> str:
+        link = self.element.find_element(By.TAG_NAME, "a").get_attribute(
+            "href"
+        )
+        if link is None:
+            link = ""
+
+        return link
+
 
 @dataclass
 class ColorSection:
@@ -103,7 +113,7 @@ class DocumentPage:
                 print(f"★{color.title}")
                 print(color.type)
                 print(color.abstract)
-                print("\n")
+                print(color.link)
 
 
 def main() -> None:
