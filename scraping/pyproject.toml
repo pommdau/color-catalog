@@ -1,0 +1,27 @@
+[project]
+name = "scraping"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "IKEH1024", email = "pondau1024@gmail.com" }
+]
+dependencies = [
+    "selenium>=4.18.1",
+    "ruff>=0.3.4",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scraping"]
