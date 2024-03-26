@@ -13,6 +13,39 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 @dataclass
+class Color:
+    element: WebElement
+
+    @property
+    def title(self) -> str:
+        return (
+            self.element.find_element(By.CLASS_NAME, "decorated-title")
+            .find_element(By.CLASS_NAME, "identifier")
+            .text
+        )
+
+    @property
+    def type(self) -> str:
+        return (
+            self.element.find_element(By.CLASS_NAME, "decorated-title")
+            .find_elements(By.TAG_NAME, "span")[2]
+            .text.replace(": ", "")
+        )
+
+    @property
+    def abstract(self) -> str:
+        return (
+            self.element.find_element(By.CLASS_NAME, "abstract")
+            .find_element(By.CLASS_NAME, "content")
+            .text
+        )
+
+    @property
+    def is_desprecated(self) -> bool:
+        return False
+
+
+@dataclass
 class ColorSection:
     element: WebElement
 
@@ -23,6 +56,11 @@ class ColorSection:
             .find_element(By.TAG_NAME, "a")
             .text
         )
+
+    @property
+    def colors(self) -> list[Color]:
+        elements = self.element.find_elements(By.CLASS_NAME, "topic")
+        return [Color(element) for element in elements]
 
 
 @dataclass
@@ -51,7 +89,7 @@ class DocumentPage:
 
     def func(self) -> None:
         section = self.sections[0]
-        print(section.title)
+        print(section.colors[0].type)
 
 
 def main() -> None:
