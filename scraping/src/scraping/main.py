@@ -1,7 +1,9 @@
 import contextlib
+import json
+from collections import OrderedDict
 from dataclasses import dataclass
 from time import sleep
-from typing import TYPE_CHECKING, ClassVar
+from typing import TYPE_CHECKING, Any, ClassVar
 
 from launch_browser import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
@@ -45,7 +47,15 @@ class Color:
 
     @property
     def is_desprecated(self) -> bool:
-        return False
+        try:
+            self.element.find_element(By.CLASS_NAME, "badge-deprecated")
+        except NoSuchElementException:
+            return False
+        return True
+
+    # @property
+    # def is_beta(self) -> bool:
+    #     return False
 
     @property
     def link(self) -> str:
@@ -91,6 +101,20 @@ class DocumentPage:
         )
 
     @property
+    def title(self) -> str:
+        return (
+            WebDriverWait(self.driver, 5)
+            .until(
+                expected_conditions.presence_of_element_located(
+                    (By.CLASS_NAME, "topictitle")
+                )
+            )
+            .find_element(By.CLASS_NAME, "title")
+            .find_element(By.TAG_NAME, "span")
+            .text
+        )
+
+    @property
     def sections(self) -> list[ColorSection]:
         elements = (
             WebDriverWait(self.driver, 5)
@@ -106,20 +130,53 @@ class DocumentPage:
         return [ColorSection(element) for element in elements]
 
     def func(self) -> None:
-        sections = self.sections
-        for section in sections:
-            print(f"★{section.title}")
-            for color in section.colors:
-                print(f"★{color.title}")
-                print(color.type)
-                print(color.abstract)
-                print(color.link)
+        json = JsonManager.create_json_with_page(self)
+        print(json)
+
+
+class JsonManager:
+    @classmethod
+    def create_json_with_page(
+        cls, page: DocumentPage
+    ) -> OrderedDict[str, str]:
+        json_dict: OrderedDict[str, Any] = OrderedDict()
+        json_dict["title"] = page.title
+        json_dict["sections"] = [
+            JsonManager.create_json_with_section(section)
+            for section in page.sections
+        ]
+        return json_dict
+
+    @classmethod
+    def create_json_with_section(
+        cls, section: ColorSection
+    ) -> OrderedDict[str, Any]:
+        json_dict: OrderedDict[str, Any] = OrderedDict()
+        json_dict["title"] = section.title
+        json_dict["colors"] = [
+            JsonManager.create_json_with_color(color)
+            for color in section.colors
+        ]
+        return json_dict
+
+    @classmethod
+    def create_json_with_color(cls, color: Color) -> OrderedDict[str, Any]:
+        json_dict: OrderedDict[str, Any] = OrderedDict()
+        json_dict["title"] = color.title
+        json_dict["type"] = color.type
+        json_dict["abstract"] = color.abstract
+        json_dict["is_desprecated"] = color.is_desprecated
+        json_dict["link"] = color.link
+        return json_dict
 
 
 def main() -> None:
     document_page = DocumentPage(ChromeDriverManager.launch())
     document_page.go_toppage()
-    document_page.func()
+    json_dict = JsonManager.create_json_with_page(document_page)
+
+    with open(f"result/{document_page.title}.json", "w") as f:
+        json.dump(json_dict, f, indent=4, ensure_ascii=False)
 
     print("stop")
 

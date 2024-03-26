@@ -1,0 +1,454 @@
+{
+    "title": "UI Element Colors",
+    "sections": [
+        {
+            "title": "Label Colors",
+            "colors": [
+                {
+                    "title": "labelColor",
+                    "type": "NSColor",
+                    "abstract": "The primary color to use for text labels.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1534657-labelcolor"
+                },
+                {
+                    "title": "secondaryLabelColor",
+                    "type": "NSColor",
+                    "abstract": "The secondary color to use for text labels.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1533254-secondarylabelcolor"
+                },
+                {
+                    "title": "tertiaryLabelColor",
+                    "type": "NSColor",
+                    "abstract": "The tertiary color to use for text labels.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1532376-tertiarylabelcolor"
+                },
+                {
+                    "title": "quaternaryLabelColor",
+                    "type": "NSColor",
+                    "abstract": "The quaternary color to use for text labels and separators.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1534635-quaternarylabelcolor"
+                }
+            ]
+        },
+        {
+            "title": "Text Colors",
+            "colors": [
+                {
+                    "title": "textColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for text.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1527025-textcolor"
+                },
+                {
+                    "title": "placeholderTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for placeholder text in controls or text views.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998829-placeholdertextcolor"
+                },
+                {
+                    "title": "selectedTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for selected text.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1528605-selectedtextcolor"
+                },
+                {
+                    "title": "textBackgroundColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the background area behind text.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1535446-textbackgroundcolor"
+                },
+                {
+                    "title": "selectedTextBackgroundColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the background of selected text.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1528136-selectedtextbackgroundcolor"
+                },
+                {
+                    "title": "keyboardFocusIndicatorColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the keyboard focus ring around controls.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1532031-keyboardfocusindicatorcolor"
+                },
+                {
+                    "title": "unemphasizedSelectedTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for selected text in an unemphasized context.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998834-unemphasizedselectedtextcolor"
+                },
+                {
+                    "title": "unemphasizedSelectedTextBackgroundColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the text background in an unemphasized context.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998833-unemphasizedselectedtextbackgrou"
+                }
+            ]
+        },
+        {
+            "title": "Content Colors",
+            "colors": [
+                {
+                    "title": "linkColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for links.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998828-linkcolor"
+                },
+                {
+                    "title": "separatorColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for separators between different sections of content.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998831-separatorcolor"
+                },
+                {
+                    "title": "selectedContentBackgroundColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the background of selected and emphasized content.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998830-selectedcontentbackgroundcolor"
+                },
+                {
+                    "title": "unemphasizedSelectedContentBackgroundColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for selected and unemphasized content.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998832-unemphasizedselectedcontentbackg"
+                }
+            ]
+        },
+        {
+            "title": "Menu Colors",
+            "colors": [
+                {
+                    "title": "selectedMenuItemTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the text in menu items.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1526658-selectedmenuitemtextcolor"
+                }
+            ]
+        },
+        {
+            "title": "Table Colors",
+            "colors": [
+                {
+                    "title": "gridColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the optional gridlines, such as those in a table view.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1527240-gridcolor"
+                },
+                {
+                    "title": "headerTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for text in header cells in table views and outline views.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1531237-headertextcolor"
+                },
+                {
+                    "title": "alternatingContentBackgroundColors",
+                    "type": "[NSColor]",
+                    "abstract": "The colors to use for alternating content, typically found in table views and collection views.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998825-alternatingcontentbackgroundcolo"
+                }
+            ]
+        },
+        {
+            "title": "Control Colors",
+            "colors": [
+                {
+                    "title": "controlAccentColor",
+                    "type": "NSColor",
+                    "abstract": "The user's current accent color preference.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/3000782-controlaccentcolor"
+                },
+                {
+                    "title": "controlColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the flat surfaces of a control.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1524856-controlcolor"
+                },
+                {
+                    "title": "controlBackgroundColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the background of large controls, such as scroll views or table views.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1531948-controlbackgroundcolor"
+                },
+                {
+                    "title": "controlTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for text on enabled controls.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1535230-controltextcolor"
+                },
+                {
+                    "title": "disabledControlTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for text on disabled controls.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1530573-disabledcontroltextcolor"
+                },
+                {
+                    "title": "currentControlTint",
+                    "type": "NSControlTint",
+                    "abstract": "The current system control tint color.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1526377-currentcontroltint"
+                },
+                {
+                    "title": "selectedControlColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the face of a selected control—that is, a control that has been clicked or is being dragged.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1526796-selectedcontrolcolor"
+                },
+                {
+                    "title": "selectedControlTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for text in a selected control—that is, a control being clicked or dragged.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1535591-selectedcontroltextcolor"
+                },
+                {
+                    "title": "alternateSelectedControlTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for text in a selected control.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1527413-alternateselectedcontroltextcolo"
+                },
+                {
+                    "title": "scrubberTexturedBackground",
+                    "type": "NSColor",
+                    "abstract": "The patterned color to use for the background of a scrubber control.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2646931-scrubbertexturedbackground"
+                }
+            ]
+        },
+        {
+            "title": "Window Colors",
+            "colors": [
+                {
+                    "title": "windowBackgroundColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the window background.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1528630-windowbackgroundcolor"
+                },
+                {
+                    "title": "windowFrameTextColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for text in a window's frame.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1524257-windowframetextcolor"
+                },
+                {
+                    "title": "underPageBackgroundColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use in the area beneath your window's views.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1534707-underpagebackgroundcolor"
+                }
+            ]
+        },
+        {
+            "title": "Highlights and Shadows",
+            "colors": [
+                {
+                    "title": "findHighlightColor",
+                    "type": "NSColor",
+                    "abstract": "The highlight color to use for the bubble that shows inline search result values.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/2998827-findhighlightcolor"
+                },
+                {
+                    "title": "highlightColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use as a virtual light source on the screen.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1527697-highlightcolor"
+                },
+                {
+                    "title": "shadowColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for virtual shadows cast by raised objects on the screen.",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1525121-shadowcolor"
+                }
+            ]
+        },
+        {
+            "title": "Deprecated Colors",
+            "colors": [
+                {
+                    "title": "alternateSelectedControlColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for the face of a selected control in a list or table.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1533135-alternateselectedcontrolcolor"
+                },
+                {
+                    "title": "controlAlternatingRowBackgroundColors",
+                    "type": "[NSColor]",
+                    "abstract": "An array containing the system specified background colors for alternating rows in tables and lists.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1530934-controlalternatingrowbackgroundc"
+                },
+                {
+                    "title": "controlHighlightColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for the highlighted bezels of controls.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1530054-controlhighlightcolor"
+                },
+                {
+                    "title": "controlLightHighlightColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for light highlights in controls.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1530976-controllighthighlightcolor"
+                },
+                {
+                    "title": "controlShadowColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for the shadows dropped from controls.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1530384-controlshadowcolor"
+                },
+                {
+                    "title": "controlDarkShadowColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for the dark edge of the shadow dropped from controls.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1525435-controldarkshadowcolor"
+                },
+                {
+                    "title": "headerColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used as the background color for header cells in table views and outline views.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1534980-headercolor"
+                },
+                {
+                    "title": "knobColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for the flat surface of a slider knob that hasn’t been selected.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1528215-knobcolor"
+                },
+                {
+                    "title": "selectedKnobColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for the slider knob when it is selected.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1530032-selectedknobcolor"
+                },
+                {
+                    "title": "scrollBarColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for scroll “bars”—that is, for the groove in which a scroller’s knob moves",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1527508-scrollbarcolor"
+                },
+                {
+                    "title": "secondarySelectedControlColor",
+                    "type": "NSColor",
+                    "abstract": "The color used for selected controls in non-key views.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1535258-secondaryselectedcontrolcolor"
+                },
+                {
+                    "title": "selectedMenuItemColor",
+                    "type": "NSColor",
+                    "abstract": "The color to use for the face of selected menu items.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1534868-selectedmenuitemcolor"
+                },
+                {
+                    "title": "windowFrameColor",
+                    "type": "NSColor",
+                    "abstract": "The system color used for window frames, except for their text.",
+                    "is_desprecated": true,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/1533287-windowframecolor"
+                }
+            ]
+        },
+        {
+            "title": "Fill Colors",
+            "colors": [
+                {
+                    "title": "quaternarySystemFill",
+                    "type": "NSColor",
+                    "abstract": "",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/4236441-quaternarysystemfill"
+                },
+                {
+                    "title": "quinaryLabel",
+                    "type": "NSColor",
+                    "abstract": "",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/4236442-quinarylabel"
+                },
+                {
+                    "title": "quinarySystemFill",
+                    "type": "NSColor",
+                    "abstract": "",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/4236443-quinarysystemfill"
+                },
+                {
+                    "title": "secondarySystemFill",
+                    "type": "NSColor",
+                    "abstract": "",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/4236444-secondarysystemfill"
+                },
+                {
+                    "title": "systemFill",
+                    "type": "NSColor",
+                    "abstract": "",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/4236445-systemfill"
+                },
+                {
+                    "title": "tertiarySystemFill",
+                    "type": "NSColor",
+                    "abstract": "",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/4236446-tertiarysystemfill"
+                },
+                {
+                    "title": "textInsertionPointColor",
+                    "type": "NSColor",
+                    "abstract": "",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/4213248-textinsertionpointcolor"
+                },
+                {
+                    "title": "transferRepresentation",
+                    "type": "TransferRepresentation",
+                    "abstract": "",
+                    "is_desprecated": false,
+                    "link": "https://developer.apple.com/documentation/appkit/nscolor/4198202-transferrepresentation"
+                }
+            ]
+        }
+    ]
+}
