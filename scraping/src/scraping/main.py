@@ -34,11 +34,14 @@ class Color:
 
     @property
     def abstract(self) -> str:
-        return (
-            self.element.find_element(By.CLASS_NAME, "abstract")
-            .find_element(By.CLASS_NAME, "content")
-            .text
-        )
+        try:
+            return (
+                self.element.find_element(By.CLASS_NAME, "abstract")
+                .find_element(By.CLASS_NAME, "content")
+                .text
+            )
+        except NoSuchElementException:
+            return ""
 
     @property
     def is_desprecated(self) -> bool:
@@ -79,17 +82,28 @@ class DocumentPage:
 
     @property
     def sections(self) -> list[ColorSection]:
-        elements = WebDriverWait(self.driver, 5).until(
-            expected_conditions.presence_of_all_elements_located(
-                (By.CLASS_NAME, "contenttable-section")
+        elements = (
+            WebDriverWait(self.driver, 5)
+            .until(
+                # Topics以下
+                expected_conditions.presence_of_element_located(
+                    (By.CLASS_NAME, "contenttable")
+                )
             )
+            .find_elements(By.CLASS_NAME, "contenttable-section")
         )
 
         return [ColorSection(element) for element in elements]
 
     def func(self) -> None:
-        section = self.sections[0]
-        print(section.colors[0].type)
+        sections = self.sections
+        for section in sections:
+            print(f"★{section.title}")
+            for color in section.colors:
+                print(f"★{color.title}")
+                print(color.type)
+                print(color.abstract)
+                print("\n")
 
 
 def main() -> None:
