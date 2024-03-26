@@ -4,8 +4,6 @@ from pathlib import Path
 
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.chrome.webdriver import WebDriver as ChromeDriver
-
-# from src.scraping.utils.path import get_project_dir
 from utils.path import get_project_dir
 
 """

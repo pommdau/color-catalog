@@ -17,6 +17,10 @@ h11==0.14.0
     # via wsproto
 idna==3.6
     # via trio
+mypy==1.9.0
+    # via scraping
+mypy-extensions==1.0.0
+    # via mypy
 outcome==1.3.0.post0
     # via trio
 pysocks==1.7.1
@@ -35,6 +39,7 @@ trio==0.25.0
 trio-websocket==0.11.1
     # via selenium
 typing-extensions==4.10.0
+    # via mypy
     # via selenium
 urllib3==2.2.1
     # via selenium

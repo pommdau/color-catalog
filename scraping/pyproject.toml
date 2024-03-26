@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "selenium>=4.18.1",
     "ruff>=0.3.4",
+    "mypy>=1.9.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -62,7 +63,12 @@ line-length = 79
 
 ## select: 指定したルールをチェックの対象とする
 lint.select = ["ALL"]
-## ignore: 指定したルールをチェックの対象としない
+
+# Option Settings
+## https://gihyo.jp/article/2023/03/monthly-python-2303
+## 略称一覧: https://pypi.org/project/ruff/0.0.242/#supported-rule
+
+## select: 指定したルールをチェックの対象とする
 lint.ignore = [
     "D", # Docstringを中途半端にしか書いていないので、除外する
 ]
