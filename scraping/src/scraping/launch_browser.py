@@ -48,7 +48,7 @@ class ChromeDriverManager:
     @classmethod
     def delete_cookie(cls) -> None:
         with contextlib.suppress(FileNotFoundError):
-            shutil.rmtree(cls._get_cookie_dir_path)
+            shutil.rmtree(cls._get_cookie_dir_path())
 
 
 if __name__ == "__main__":
