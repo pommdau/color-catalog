@@ -1,12 +1,6 @@
-import contextlib
-import json
-from collections import OrderedDict
 from dataclasses import dataclass
-from time import sleep
-from typing import TYPE_CHECKING, Any, ClassVar
 
-from launch_browser import ChromeDriverManager
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.webdriver import WebDriver as ChromeDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
@@ -89,7 +83,7 @@ class ColorSection:
 @dataclass
 class DocumentPage:
     driver: ChromeDriver
-    url = "https://developer.apple.com/documentation/appkit/nscolor/ui_element_colors"
+    url: str
 
     def go_toppage(self) -> None:
         self.driver.get(self.url)
@@ -129,56 +123,10 @@ class DocumentPage:
 
         return [ColorSection(element) for element in elements]
 
-    def func(self) -> None:
-        json = JsonManager.create_json_with_page(self)
-        print(json)
-
-
-class JsonManager:
-    @classmethod
-    def create_json_with_page(
-        cls, page: DocumentPage
-    ) -> OrderedDict[str, str]:
-        json_dict: OrderedDict[str, Any] = OrderedDict()
-        json_dict["title"] = page.title
-        json_dict["sections"] = [
-            JsonManager.create_json_with_section(section)
-            for section in page.sections
-        ]
-        return json_dict
-
-    @classmethod
-    def create_json_with_section(
-        cls, section: ColorSection
-    ) -> OrderedDict[str, Any]:
-        json_dict: OrderedDict[str, Any] = OrderedDict()
-        json_dict["title"] = section.title
-        json_dict["colors"] = [
-            JsonManager.create_json_with_color(color)
-            for color in section.colors
-        ]
-        return json_dict
-
-    @classmethod
-    def create_json_with_color(cls, color: Color) -> OrderedDict[str, Any]:
-        json_dict: OrderedDict[str, Any] = OrderedDict()
-        json_dict["title"] = color.title
-        json_dict["type"] = color.type
-        json_dict["abstract"] = color.abstract
-        json_dict["is_desprecated"] = color.is_desprecated
-        json_dict["link"] = color.link
-        return json_dict
-
 
 def main() -> None:
-    document_page = DocumentPage(ChromeDriverManager.launch())
-    document_page.go_toppage()
-    json_dict = JsonManager.create_json_with_page(document_page)
-
-    with open(f"result/{document_page.title}.json", "w") as f:
-        json.dump(json_dict, f, indent=4, ensure_ascii=False)
-
-    print("stop")
+    page = DocumentPage()
+    print("hello, python!")
 
 
 if __name__ == "__main__":
