@@ -1,7 +1,7 @@
 from collections import OrderedDict
 from typing import Any
 
-from document_page import Color, ColorSection, DocumentPage
+from document_page import Color, ColorAbstract, ColorSection, DocumentPage
 
 
 class JsonManager:
@@ -34,7 +34,18 @@ class JsonManager:
         json_dict: OrderedDict[str, Any] = OrderedDict()
         json_dict["title"] = color.title
         json_dict["type"] = color.type
-        json_dict["abstract"] = color.abstract
+        json_dict["abstracts"] = [
+            JsonManager._create_json_with_color_abstract(color.abstract)
+        ]
         json_dict["is_desprecated"] = color.is_desprecated
         json_dict["link"] = color.link
+        return json_dict
+
+    @classmethod
+    def _create_json_with_color_abstract(
+        cls, abstract: ColorAbstract
+    ) -> OrderedDict[str, Any]:
+        json_dict: OrderedDict[str, Any] = OrderedDict()
+        json_dict["abstract"] = abstract.text
+        json_dict["language"] = abstract.language
         return json_dict

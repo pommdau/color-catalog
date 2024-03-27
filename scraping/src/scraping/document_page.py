@@ -9,6 +9,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 @dataclass
+class ColorAbstract:
+    text: str
+    language: str  # e.g. "en"
+
+
+@dataclass
 class Color:
     element: WebElement
 
@@ -29,15 +35,17 @@ class Color:
         )
 
     @property
-    def abstract(self) -> str:
+    def abstract(self) -> ColorAbstract:
         try:
-            return (
+            text = (
                 self.element.find_element(By.CLASS_NAME, "abstract")
                 .find_element(By.CLASS_NAME, "content")
                 .text
             )
         except NoSuchElementException:
-            return ""
+            text = ""
+
+        return ColorAbstract(text=text, language="en")
 
     @property
     def is_desprecated(self) -> bool:
@@ -125,7 +133,6 @@ class DocumentPage:
 
 
 def main() -> None:
-    page = DocumentPage()
     print("hello, python!")
 
 
