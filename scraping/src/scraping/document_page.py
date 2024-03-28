@@ -61,20 +61,18 @@ class Color:
 
 @dataclass
 class ColorSection:
-    element: WebElement
+    title: str
+    colors: list[Color]
 
-    @property
-    def title(self) -> str:
-        return (
-            self.element.find_element(By.CLASS_NAME, "section-title")
+    def __init__(self, element: WebElement) -> None:
+        self.title = (
+            element.find_element(By.CLASS_NAME, "section-title")
             .find_element(By.TAG_NAME, "a")
             .text
         )
 
-    @property
-    def colors(self) -> list[Color]:
-        elements = self.element.find_elements(By.CLASS_NAME, "topic")
-        return [Color(element=element) for element in elements]
+        color_elements = element.find_elements(By.CLASS_NAME, "topic")
+        self.colors = [Color(element=element) for element in color_elements]
 
 
 @dataclass
