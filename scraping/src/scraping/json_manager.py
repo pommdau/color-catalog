@@ -38,3 +38,11 @@ class JsonManager:
         json_dict["is_desprecated"] = color.is_desprecated
         json_dict["link"] = color.link
         return json_dict
+
+
+def main() -> None:
+    print("hello, python!")
+
+
+if __name__ == "__main__":
+    main()

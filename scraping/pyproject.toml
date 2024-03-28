@@ -33,6 +33,8 @@ packages = ["src/scraping"]
 # mypyの設定
 ############
 
+# https://mypy.readthedocs.io/en/stable/config_file.html
+
 [tool.mypy]
 python_version = "3.12"
 show_error_context = true  # エラー時のメッセージを詳細表示
@@ -41,6 +43,9 @@ disallow_untyped_defs = true  # 関数定義の引数/戻り値に型アノテ�
 no_implicit_optional = true  # デフォルト引数に None を取る場合型アノテーションに Optional 必須
 check_untyped_defs = true  # 型注釈がない関数やメソッドに対して型チェックを行う
 warn_redundant_casts = true  # 冗長なキャストに警告
+namespace_packages = false
+mypy_path = "./src/scraping"
+
 
 [[tool.mypy.overrides]]
 
