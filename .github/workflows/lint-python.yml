@@ -2,10 +2,11 @@ name: Check Python by Lint
 
 on:
   pull_request:
-      - "scraping/**"
+      paths:
+        - "scraping/**"
   workflow_dispatch:
-    paths:
-      - "scraping/**"
+      paths:
+        - "scraping/**"
 
 jobs:
   run-lint:
