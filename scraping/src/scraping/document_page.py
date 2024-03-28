@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from dataclasses import dataclass
 
 from selenium.common.exceptions import NoSuchElementException
@@ -9,16 +10,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 @dataclass
-class ColorAbstract:
-    text: str
-    language: str  # e.g. "en"
-
-
-@dataclass
 class Color:
     title: str
     type: str
-    abstracts: list[ColorAbstract]
+    abstracts: OrderedDict[str, str]
     is_desprecated: bool
     is_beta: bool
     link: str
@@ -44,7 +39,8 @@ class Color:
             )
         except NoSuchElementException:
             abstract_text = ""
-        self.abstracts = [ColorAbstract(text=abstract_text, language="en")]
+        self.abstracts = OrderedDict()
+        self.abstracts["en"] = abstract_text
 
         try:
             element.find_element(By.CLASS_NAME, "badge-deprecated")
