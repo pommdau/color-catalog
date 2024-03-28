@@ -99,7 +99,7 @@ class DocumentPageReader:
     driver: ChromeDriver
     url: str
 
-    def go_toppage(self) -> None:
+    def _go_toppage(self) -> None:
         self.driver.get(self.url)
         # タイトルの表示を待つ
         WebDriverWait(self.driver, 5).until(
@@ -109,7 +109,7 @@ class DocumentPageReader:
         )
 
     def load_page(self) -> DocumentPage:
-        self.go_toppage()
+        self._go_toppage()
         return DocumentPage(
             element=self.driver.find_element(By.TAG_NAME, "body")
         )
