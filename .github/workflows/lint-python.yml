@@ -1,8 +1,11 @@
-name: Lint Check
+name: Check Python by Lint
 
 on:
   pull_request:
+      - "scraping/**"
   workflow_dispatch:
+    paths:
+      - "scraping/**"
 
 jobs:
   run-lint:
