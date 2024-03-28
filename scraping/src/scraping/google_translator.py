@@ -1,13 +1,16 @@
 import json
+from collections import OrderedDict
 from enum import Enum
+from pathlib import Path
+from typing import Any
 
 from googletrans import Translator
 
 _translator = Translator()
 
 
-def translate(text: str, dest_lang: str, src_lang: str = "en") -> str:
-    return text  # debug
+def google_translate(text: str, dest_lang: str, src_lang: str = "en") -> str:
+    return "翻訳されてるで"  # debug
     if len(text) == 0:
         return ""
     try:
@@ -46,26 +49,30 @@ def main() -> None:
     #         )
     #     )
 
-    path = "/Users/ikeh/Programming/Swift/color-catalog/scraping/result/Standard Colors.json"  # noqa: E501
-    with open(path, "r") as file:
-        json_dict = json.load(file)
+    path = "/Users/ikeh/Programming/Swift/color-catalog/scraping/result/UI Element Colors.json"  # noqa: E501
+
+    json_dict: OrderedDict[str, Any]
+    with Path(path).open("r") as file:
+        json_dict = json.load(file, object_pairs_hook=OrderedDict)
 
         for section_index, _ in enumerate(json_dict["sections"]):
             for color_index, color in enumerate(
                 json_dict["sections"][section_index]["colors"]
             ):
-                abstract_en = [
-                    abstract["text"]
-                    for abstract in color["abstracts"]
-                    if abstract["language"] == "en"
-                ][0]
+                # 各色のabstractの英語訳を取得
+                abstract_in_english = color["abstracts"]["en"]
+                # 各言語で翻訳
+                for language in DefinedLanguage:
+                    translated_abstract = google_translate(
+                        text=abstract_in_english, dest_lang=language.name
+                    )
+                    json_dict["sections"][section_index]["colors"][
+                        color_index
+                    ]["abstracts"][language.value] = translated_abstract
 
-                json_dict["sections"][section_index]["colors"][color_index][
-                    "abstracts"
-                ]
-                print("stop")
-
-        print(json_dict)
+    # 翻訳した結果をJSONへ反映する
+    with Path(path).open("w") as file:
+        json.dump(json_dict, file, indent=4, ensure_ascii=False)
 
 
 if __name__ == "__main__":
