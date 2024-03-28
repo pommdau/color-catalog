@@ -1,0 +1,104 @@
+[project]
+name = "scraping"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "IKEH1024", email = "pondau1024@gmail.com" }
+]
+dependencies = [
+    "selenium>=4.18.1",
+    "ruff>=0.3.4",
+    "mypy>=1.9.0",
+    "googletrans>=4.0.0rc1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scraping"]
+
+
+############
+# mypyの設定
+############
+
+[tool.mypy]
+python_version = "3.12"
+show_error_context = true  # エラー時のメッセージを詳細表示
+show_column_numbers = true  # エラー発生箇所の行数/列数を表示
+disallow_untyped_defs = true  # 関数定義の引数/戻り値に型アノテーション必須
+no_implicit_optional = true  # デフォルト引数に None を取る場合型アノテーションに Optional 必須
+check_untyped_defs = true  # 型注釈がない関数やメソッドに対して型チェックを行う
+warn_redundant_casts = true  # 冗長なキャストに警告
+
+[[tool.mypy.overrides]]
+
+# サードパーティの[import-untyped]を無視する
+module = [
+    'requests/*',
+    'googletrans'
+]
+ignore_missing_imports = true
+
+############
+# Ruffの設定
+############
+
+[tool.ruff]
+line-length = 79
+
+# Option Settings
+## https://gihyo.jp/article/2023/03/monthly-python-2303
+## 略称一覧: https://pypi.org/project/ruff/0.0.242/#supported-rule
+
+## select: 指定したルールをチェックの対象とする
+lint.select = ["ALL"]
+
+# Option Settings
+## https://gihyo.jp/article/2023/03/monthly-python-2303
+## 略称一覧: https://pypi.org/project/ruff/0.0.242/#supported-rule
+
+## select: 指定したルールをチェックの対象とする
+lint.ignore = [
+    "D", # Docstringを中途半端にしか書いていないので、除外する
+]
+
+# Assume Python 3.12
+target-version = "py312"
+
+[tool.ruff.lint.per-file-ignores]
+# ファイル毎に無効とする設定
+
+# https://docs.astral.sh/ruff/settings/#lint_per-file-ignores
+"*.py" = [
+    "ANN101", # selfの型を省略するため
+    "ANN102", # clsの型を省略するため
+    "COM812", # 末尾のカンマを必須としない
+    "E722", # except:を許可
+    "ERA001", # コメントアウト文を許可
+    "FBT001", # 関数の引数にbooleanを許可(TODO:見直し)
+    "FBT002", # 関数の引数にbooleanを許可(TODO:見直し)
+    "INP001", # __init__.pyを必須としない
+    "PT009", # assertEqualなどを使うため
+    "PTH207", # glob.globを許可
+    "S311", # randomを許可
+    "S603", # Shell無しのsubprocessを許可
+    "T201", # print文を許可するため
+    "TRY002", # 標準のExceptionの使用を許可
+]
+
+[tool.ruff.lint.pydocstyle]
+# pydocstyleを無視しているのでこの設定は無意味だが、
+# いずれdocstringのスタイルを統一するので設定だけしておく
+convention = "google"

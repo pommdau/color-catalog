@@ -1,0 +1,44 @@
+name: Lint Check
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  run-lint:
+    runs-on: ubuntu-latest
+    name: Run Lint
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v4
+      - name: Set up Python environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # キャッシュの読み込み
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 依存関係のインストール
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      # Ruffの実行
+      # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#using-ruff-to-lint-code
+      - name: Lint with Ruff
+        run: |
+          pip install ruff
+          ruff check . --output-format=github
+
+      # mypyの実行
+      - name: Lint with mypy
+        run: |
+          pip install mypy
+          mypy . --config-file pyproject.toml --ignore-missing-imports
