@@ -1,6 +1,6 @@
 import json
 
-from document_page import DocumentPage
+from document_page import DocumentPageReader
 from json_manager import JsonManager
 from launch_browser import ChromeDriverManager
 
@@ -14,8 +14,8 @@ def main() -> None:
     driver = ChromeDriverManager.launch()
 
     for url in urls:
-        page = DocumentPage(driver=driver, url=url)
-        page.go_toppage()
+        reader = DocumentPageReader(driver=driver, url=url)
+        page = reader.load_page()
         json_dict = JsonManager.create_json_with_page(page)
 
         with open(f"result/{page.title}.json", "w") as f:

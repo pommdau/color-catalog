@@ -77,6 +77,25 @@ class ColorSection:
 
 @dataclass
 class DocumentPage:
+    title: str
+    sections: list[ColorSection]
+
+    def __init__(self, element: WebElement) -> None:
+        self.title = (
+            element.find_element(By.CLASS_NAME, "topictitle")
+            .find_element(By.CLASS_NAME, "title")
+            .find_element(By.TAG_NAME, "span")
+            .text
+        )
+
+        section_elements = element.find_element(
+            By.CLASS_NAME, "contenttable"
+        ).find_elements(By.CLASS_NAME, "contenttable-section")
+        self.sections = [ColorSection(element) for element in section_elements]
+
+
+@dataclass
+class DocumentPageReader:
     driver: ChromeDriver
     url: str
 
@@ -89,34 +108,11 @@ class DocumentPage:
             )
         )
 
-    @property
-    def title(self) -> str:
-        return (
-            WebDriverWait(self.driver, 5)
-            .until(
-                expected_conditions.presence_of_element_located(
-                    (By.CLASS_NAME, "topictitle")
-                )
-            )
-            .find_element(By.CLASS_NAME, "title")
-            .find_element(By.TAG_NAME, "span")
-            .text
+    def load_page(self) -> DocumentPage:
+        self.go_toppage()
+        return DocumentPage(
+            element=self.driver.find_element(By.TAG_NAME, "body")
         )
-
-    @property
-    def sections(self) -> list[ColorSection]:
-        elements = (
-            WebDriverWait(self.driver, 5)
-            .until(
-                # Topics以下
-                expected_conditions.presence_of_element_located(
-                    (By.CLASS_NAME, "contenttable")
-                )
-            )
-            .find_elements(By.CLASS_NAME, "contenttable-section")
-        )
-
-        return [ColorSection(element) for element in elements]
 
 
 def main() -> None:
