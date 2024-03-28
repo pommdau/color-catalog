@@ -46,7 +46,9 @@ class Color:
             element.find_element(By.CLASS_NAME, "badge-deprecated")
         except NoSuchElementException:
             self.is_desprecated = False
-        self.is_desprecated = True
+        else:
+            self.is_desprecated = True
+
         self.is_beta = False  # 未実装
 
         link = element.find_element(By.TAG_NAME, "a").get_attribute("href")
