@@ -8,7 +8,7 @@ from launch_browser import ChromeDriverManager
 def main() -> None:
     urls = [
         "https://developer.apple.com/documentation/appkit/nscolor/ui_element_colors",
-        "https://developer.apple.com/documentation/appkit/nscolor/standard_colors",
+        # "https://developer.apple.com/documentation/appkit/nscolor/standard_colors",
     ]
 
     driver = ChromeDriverManager.launch()

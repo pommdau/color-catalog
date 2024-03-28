@@ -16,58 +16,47 @@ class ColorAbstract:
 
 @dataclass
 class Color:
-    element: WebElement
+    title: str
+    type: str
+    abstracts: list[ColorAbstract]
+    is_desprecated: bool
+    is_beta: bool
+    link: str
 
-    @property
-    def title(self) -> str:
-        return (
-            self.element.find_element(By.CLASS_NAME, "decorated-title")
+    def __init__(self, element: WebElement) -> None:
+        self.title = (
+            element.find_element(By.CLASS_NAME, "decorated-title")
             .find_element(By.CLASS_NAME, "identifier")
             .text
         )
 
-    @property
-    def type(self) -> str:
-        return (
-            self.element.find_element(By.CLASS_NAME, "decorated-title")
+        self.type = (
+            element.find_element(By.CLASS_NAME, "decorated-title")
             .find_elements(By.TAG_NAME, "span")[2]
             .text.replace(": ", "")
         )
 
-    @property
-    def abstract(self) -> ColorAbstract:
         try:
-            text = (
-                self.element.find_element(By.CLASS_NAME, "abstract")
+            abstract_text = (
+                element.find_element(By.CLASS_NAME, "abstract")
                 .find_element(By.CLASS_NAME, "content")
                 .text
             )
         except NoSuchElementException:
-            text = ""
+            abstract_text = ""
+        self.abstracts = [ColorAbstract(text=abstract_text, language="en")]
 
-        return ColorAbstract(text=text, language="en")
-
-    @property
-    def is_desprecated(self) -> bool:
         try:
-            self.element.find_element(By.CLASS_NAME, "badge-deprecated")
+            element.find_element(By.CLASS_NAME, "badge-deprecated")
         except NoSuchElementException:
-            return False
-        return True
+            self.is_desprecated = False
+        self.is_desprecated = True
+        self.is_beta = False  # 未実装
 
-    # @property
-    # def is_beta(self) -> bool:
-    #     return False
-
-    @property
-    def link(self) -> str:
-        link = self.element.find_element(By.TAG_NAME, "a").get_attribute(
-            "href"
-        )
+        link = element.find_element(By.TAG_NAME, "a").get_attribute("href")
         if link is None:
             link = ""
-
-        return link
+        self.link = link
 
 
 @dataclass
@@ -85,7 +74,7 @@ class ColorSection:
     @property
     def colors(self) -> list[Color]:
         elements = self.element.find_elements(By.CLASS_NAME, "topic")
-        return [Color(element) for element in elements]
+        return [Color(element=element) for element in elements]
 
 
 @dataclass

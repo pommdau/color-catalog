@@ -13,7 +13,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1534657-labelcolor"
                 },
                 {
@@ -25,7 +25,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1533254-secondarylabelcolor"
                 },
                 {
@@ -37,7 +37,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1532376-tertiarylabelcolor"
                 },
                 {
@@ -49,7 +49,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1534635-quaternarylabelcolor"
                 }
             ]
@@ -66,7 +66,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527025-textcolor"
                 },
                 {
@@ -78,7 +78,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998829-placeholdertextcolor"
                 },
                 {
@@ -90,7 +90,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1528605-selectedtextcolor"
                 },
                 {
@@ -102,7 +102,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535446-textbackgroundcolor"
                 },
                 {
@@ -114,7 +114,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1528136-selectedtextbackgroundcolor"
                 },
                 {
@@ -126,7 +126,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1532031-keyboardfocusindicatorcolor"
                 },
                 {
@@ -138,7 +138,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998834-unemphasizedselectedtextcolor"
                 },
                 {
@@ -150,7 +150,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998833-unemphasizedselectedtextbackgrou"
                 }
             ]
@@ -167,7 +167,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998828-linkcolor"
                 },
                 {
@@ -179,7 +179,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998831-separatorcolor"
                 },
                 {
@@ -191,7 +191,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998830-selectedcontentbackgroundcolor"
                 },
                 {
@@ -203,7 +203,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998832-unemphasizedselectedcontentbackg"
                 }
             ]
@@ -220,7 +220,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526658-selectedmenuitemtextcolor"
                 }
             ]
@@ -237,7 +237,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527240-gridcolor"
                 },
                 {
@@ -249,7 +249,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1531237-headertextcolor"
                 },
                 {
@@ -261,7 +261,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998825-alternatingcontentbackgroundcolo"
                 }
             ]
@@ -278,7 +278,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3000782-controlaccentcolor"
                 },
                 {
@@ -290,7 +290,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1524856-controlcolor"
                 },
                 {
@@ -302,7 +302,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1531948-controlbackgroundcolor"
                 },
                 {
@@ -314,7 +314,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535230-controltextcolor"
                 },
                 {
@@ -326,7 +326,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1530573-disabledcontroltextcolor"
                 },
                 {
@@ -338,7 +338,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526377-currentcontroltint"
                 },
                 {
@@ -350,7 +350,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526796-selectedcontrolcolor"
                 },
                 {
@@ -362,7 +362,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535591-selectedcontroltextcolor"
                 },
                 {
@@ -374,7 +374,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527413-alternateselectedcontroltextcolo"
                 },
                 {
@@ -386,7 +386,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2646931-scrubbertexturedbackground"
                 }
             ]
@@ -403,7 +403,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1528630-windowbackgroundcolor"
                 },
                 {
@@ -415,7 +415,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1524257-windowframetextcolor"
                 },
                 {
@@ -427,7 +427,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1534707-underpagebackgroundcolor"
                 }
             ]
@@ -444,7 +444,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2998827-findhighlightcolor"
                 },
                 {
@@ -456,7 +456,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527697-highlightcolor"
                 },
                 {
@@ -468,7 +468,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1525121-shadowcolor"
                 }
             ]
@@ -646,7 +646,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/4236441-quaternarysystemfill"
                 },
                 {
@@ -658,7 +658,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/4236442-quinarylabel"
                 },
                 {
@@ -670,7 +670,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/4236443-quinarysystemfill"
                 },
                 {
@@ -682,7 +682,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/4236444-secondarysystemfill"
                 },
                 {
@@ -694,7 +694,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/4236445-systemfill"
                 },
                 {
@@ -706,7 +706,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/4236446-tertiarysystemfill"
                 },
                 {
@@ -718,7 +718,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/4213248-textinsertionpointcolor"
                 },
                 {
@@ -730,7 +730,7 @@
                             "language": "en"
                         }
                     ],
-                    "is_desprecated": false,
+                    "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/4198202-transferrepresentation"
                 }
             ]
