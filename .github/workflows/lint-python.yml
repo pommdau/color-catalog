@@ -3,10 +3,8 @@ name: Check Python by Lint
 on:
   pull_request:
       paths:
-        - "scraping/**"
   workflow_dispatch:
       paths:
-        - "scraping/**"
 
 jobs:
   run-lint:
@@ -45,4 +43,4 @@ jobs:
       - name: Lint with mypy
         run: |
           pip install mypy
-          mypy . --config-file ./scraping/pyproject.toml --ignore-missing-imports
+          mypy ./scraping --config-file ./scraping/pyproject.toml --ignore-missing-imports
