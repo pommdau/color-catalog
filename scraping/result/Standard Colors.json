@@ -8,7 +8,8 @@
                     "title": "systemBlue",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for blue that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for blue that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応する青のカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879260-systemblue"
@@ -17,7 +18,8 @@
                     "title": "systemBrown",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for brown that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for brown that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応する茶色のカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879266-systembrown"
@@ -26,7 +28,8 @@
                     "title": "systemCyan",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for cyan that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for cyan that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応するシアンのカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3816005-systemcyan"
@@ -35,7 +38,8 @@
                     "title": "systemGray",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for gray that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for gray that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応する灰色のカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879265-systemgray"
@@ -44,7 +48,8 @@
                     "title": "systemGreen",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for green that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for green that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応する緑のカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879264-systemgreen"
@@ -53,7 +58,8 @@
                     "title": "systemIndigo",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for indigo that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for indigo that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応するIndigoのカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3174920-systemindigo"
@@ -62,7 +68,8 @@
                     "title": "systemMint",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for mint that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for mint that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応するミントのカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3816006-systemmint"
@@ -71,7 +78,8 @@
                     "title": "systemOrange",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for orange that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for orange that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応するオレンジのカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879263-systemorange"
@@ -80,7 +88,8 @@
                     "title": "systemPink",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for pink that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for pink that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応するピンクのカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879261-systempink"
@@ -89,7 +98,8 @@
                     "title": "systemPurple",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for purple that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for purple that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応する紫色のカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879259-systempurple"
@@ -98,7 +108,8 @@
                     "title": "systemRed",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for red that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for red that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応する赤のカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879262-systemred"
@@ -107,7 +118,8 @@
                     "title": "systemTeal",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for teal that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for teal that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応するティールのカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/3174921-systemteal"
@@ -116,7 +128,8 @@
                     "title": "systemYellow",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object for yellow that automatically adapts to vibrancy and accessibility settings."
+                        "en": "Returns a color object for yellow that automatically adapts to vibrancy and accessibility settings.",
+                        "ja": "活気とアクセシビリティの設定に自動的に適応する黄色のカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/2879267-systemyellow"
@@ -130,7 +143,8 @@
                     "title": "clear",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose grayscale and alpha values are both 0.0."
+                        "en": "Returns a color object whose grayscale and alpha values are both 0.0.",
+                        "ja": "グレースケールとアルファ値が両方とも0.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527217-clear"
@@ -144,7 +158,8 @@
                     "title": "black",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose grayscale value is 0.0 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose grayscale value is 0.0 and whose alpha value is 1.0.",
+                        "ja": "グレースケール値が0.0で、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527194-black"
@@ -153,7 +168,8 @@
                     "title": "blue",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 0.0, 0.0, 1.0 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 0.0, 0.0, 1.0 and whose alpha value is 1.0.",
+                        "ja": "RGB値が0.0、0.0、1.0であり、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535421-blue"
@@ -162,7 +178,8 @@
                     "title": "brown",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 0.6, 0.4, 0.2 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 0.6, 0.4, 0.2 and whose alpha value is 1.0.",
+                        "ja": "RGB値が0.6、0.4、0.2で、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1534013-brown"
@@ -171,7 +188,8 @@
                     "title": "cyan",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 0.0, 1.0, 1.0 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 0.0, 1.0, 1.0 and whose alpha value is 1.0.",
+                        "ja": "RGB値が0.0、1.0、1.0で、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1529217-cyan"
@@ -180,7 +198,8 @@
                     "title": "darkGray",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose grayscale value is 1/3 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose grayscale value is 1/3 and whose alpha value is 1.0.",
+                        "ja": "グレースケール値が1/3で、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1533739-darkgray"
@@ -189,7 +208,8 @@
                     "title": "gray",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose grayscale value is 0.5 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose grayscale value is 0.5 and whose alpha value is 1.0.",
+                        "ja": "グレースケール値が0.5で、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535307-gray"
@@ -198,7 +218,8 @@
                     "title": "green",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 0.0, 1.0, 0.0 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 0.0, 1.0, 0.0 and whose alpha value is 1.0.",
+                        "ja": "RGB値が0.0、1.0、0.0であり、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1527433-green"
@@ -207,7 +228,8 @@
                     "title": "lightGray",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose grayscale value is 2/3 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose grayscale value is 2/3 and whose alpha value is 1.0.",
+                        "ja": "グレースケール値が2/3で、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1535184-lightgray"
@@ -216,7 +238,8 @@
                     "title": "magenta",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 1.0, 0.0, 1.0 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 1.0, 0.0, 1.0 and whose alpha value is 1.0.",
+                        "ja": "RGB値が1.0、0.0、1.0であり、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1529883-magenta"
@@ -225,7 +248,8 @@
                     "title": "orange",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 1.0, 0.5, 0.0 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 1.0, 0.5, 0.0 and whose alpha value is 1.0.",
+                        "ja": "RGB値が1.0、0.5、0.0であり、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526691-orange"
@@ -234,7 +258,8 @@
                     "title": "purple",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 0.5, 0.0, 0.5 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 0.5, 0.0, 0.5 and whose alpha value is 1.0.",
+                        "ja": "RGB値が0.5、0.0、0.5であり、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526713-purple"
@@ -243,7 +268,8 @@
                     "title": "red",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 1.0, 0.0, 0.0 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 1.0, 0.0, 0.0 and whose alpha value is 1.0.",
+                        "ja": "RGB値が1.0、0.0、0.0であり、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1525063-red"
@@ -252,7 +278,8 @@
                     "title": "white",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose grayscale and alpha values are both 1.0."
+                        "en": "Returns a color object whose grayscale and alpha values are both 1.0.",
+                        "ja": "グレースケールとアルファ値が両方とも1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1526370-white"
@@ -261,7 +288,8 @@
                     "title": "yellow",
                     "type": "NSColor",
                     "abstracts": {
-                        "en": "Returns a color object whose RGB value is 1.0, 1.0, 0.0 and whose alpha value is 1.0."
+                        "en": "Returns a color object whose RGB value is 1.0, 1.0, 0.0 and whose alpha value is 1.0.",
+                        "ja": "RGB値が1.0、1.0、0.0であり、アルファ値が1.0であるカラーオブジェクトを返します。"
                     },
                     "is_desprecated": true,
                     "link": "https://developer.apple.com/documentation/appkit/nscolor/1524796-yellow"

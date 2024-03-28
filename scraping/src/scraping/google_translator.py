@@ -12,14 +12,17 @@ _translator = Translator()
 
 
 def google_translate(text: str, dest_lang: str, src_lang: str = "en") -> str:
-    return "翻訳されてるで"  # debug
     if len(text) == 0:
         return ""
+    if dest_lang == "en":
+        return text
+
     try:
         result = _translator.translate(text, src=src_lang, dest=dest_lang)
-        return result.text
     except:
-        return "(error)"
+        return "(translate error)"
+    else:
+        return result.text
 
 
 class DefinedLanguage(Enum):

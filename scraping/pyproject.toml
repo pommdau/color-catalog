@@ -47,7 +47,7 @@ warn_redundant_casts = true  # 冗長なキャストに警告
 # サードパーティの[import-untyped]を無視する
 module = [
     'requests/*',
-    'psutil'
+    'googletrans'
 ]
 ignore_missing_imports = true
 
@@ -85,6 +85,7 @@ target-version = "py312"
     "ANN101", # selfの型を省略するため
     "ANN102", # clsの型を省略するため
     "COM812", # 末尾のカンマを必須としない
+    "E722", # except:を許可
     "ERA001", # コメントアウト文を許可
     "FBT001", # 関数の引数にbooleanを許可(TODO:見直し)
     "FBT002", # 関数の引数にbooleanを許可(TODO:見直し)
