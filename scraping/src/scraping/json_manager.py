@@ -45,16 +45,11 @@ class JsonManager:
     def _create_json_with_color_abstracts(
         cls, abstracts: list[ColorAbstract]
     ) -> list[OrderedDict[str, Any]]:
-        return [
-            JsonManager._create_json_with_color_abstract(abstract)
-            for abstract in abstracts
-        ]
+        json_array: list[OrderedDict[str, Any]] = []
+        for abstract in abstracts:
+            json_dict: OrderedDict[str, Any] = OrderedDict()
+            json_dict["text"] = abstract.text
+            json_dict["language"] = abstract.language
+            json_array.append(json_dict)
 
-    @classmethod
-    def _create_json_with_color_abstract(
-        cls, abstract: ColorAbstract
-    ) -> OrderedDict[str, Any]:
-        json_dict: OrderedDict[str, Any] = OrderedDict()
-        json_dict["text"] = abstract.text
-        json_dict["language"] = abstract.language
-        return json_dict
+        return json_array
