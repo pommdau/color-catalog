@@ -9,7 +9,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The primary color to use for text labels.",
+                            "text": "The primary color to use for text labels.",
                             "language": "en"
                         }
                     ],
@@ -21,7 +21,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The secondary color to use for text labels.",
+                            "text": "The secondary color to use for text labels.",
                             "language": "en"
                         }
                     ],
@@ -33,7 +33,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The tertiary color to use for text labels.",
+                            "text": "The tertiary color to use for text labels.",
                             "language": "en"
                         }
                     ],
@@ -45,7 +45,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The quaternary color to use for text labels and separators.",
+                            "text": "The quaternary color to use for text labels and separators.",
                             "language": "en"
                         }
                     ],
@@ -62,7 +62,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for text.",
+                            "text": "The color to use for text.",
                             "language": "en"
                         }
                     ],
@@ -74,7 +74,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for placeholder text in controls or text views.",
+                            "text": "The color to use for placeholder text in controls or text views.",
                             "language": "en"
                         }
                     ],
@@ -86,7 +86,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for selected text.",
+                            "text": "The color to use for selected text.",
                             "language": "en"
                         }
                     ],
@@ -98,7 +98,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the background area behind text.",
+                            "text": "The color to use for the background area behind text.",
                             "language": "en"
                         }
                     ],
@@ -110,7 +110,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the background of selected text.",
+                            "text": "The color to use for the background of selected text.",
                             "language": "en"
                         }
                     ],
@@ -122,7 +122,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the keyboard focus ring around controls.",
+                            "text": "The color to use for the keyboard focus ring around controls.",
                             "language": "en"
                         }
                     ],
@@ -134,7 +134,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for selected text in an unemphasized context.",
+                            "text": "The color to use for selected text in an unemphasized context.",
                             "language": "en"
                         }
                     ],
@@ -146,7 +146,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the text background in an unemphasized context.",
+                            "text": "The color to use for the text background in an unemphasized context.",
                             "language": "en"
                         }
                     ],
@@ -163,7 +163,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for links.",
+                            "text": "The color to use for links.",
                             "language": "en"
                         }
                     ],
@@ -175,7 +175,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for separators between different sections of content.",
+                            "text": "The color to use for separators between different sections of content.",
                             "language": "en"
                         }
                     ],
@@ -187,7 +187,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the background of selected and emphasized content.",
+                            "text": "The color to use for the background of selected and emphasized content.",
                             "language": "en"
                         }
                     ],
@@ -199,7 +199,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for selected and unemphasized content.",
+                            "text": "The color to use for selected and unemphasized content.",
                             "language": "en"
                         }
                     ],
@@ -216,7 +216,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the text in menu items.",
+                            "text": "The color to use for the text in menu items.",
                             "language": "en"
                         }
                     ],
@@ -233,7 +233,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the optional gridlines, such as those in a table view.",
+                            "text": "The color to use for the optional gridlines, such as those in a table view.",
                             "language": "en"
                         }
                     ],
@@ -245,7 +245,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for text in header cells in table views and outline views.",
+                            "text": "The color to use for text in header cells in table views and outline views.",
                             "language": "en"
                         }
                     ],
@@ -257,7 +257,7 @@
                     "type": "[NSColor]",
                     "abstracts": [
                         {
-                            "abstract": "The colors to use for alternating content, typically found in table views and collection views.",
+                            "text": "The colors to use for alternating content, typically found in table views and collection views.",
                             "language": "en"
                         }
                     ],
@@ -274,7 +274,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The user's current accent color preference.",
+                            "text": "The user's current accent color preference.",
                             "language": "en"
                         }
                     ],
@@ -286,7 +286,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the flat surfaces of a control.",
+                            "text": "The color to use for the flat surfaces of a control.",
                             "language": "en"
                         }
                     ],
@@ -298,7 +298,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the background of large controls, such as scroll views or table views.",
+                            "text": "The color to use for the background of large controls, such as scroll views or table views.",
                             "language": "en"
                         }
                     ],
@@ -310,7 +310,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for text on enabled controls.",
+                            "text": "The color to use for text on enabled controls.",
                             "language": "en"
                         }
                     ],
@@ -322,7 +322,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for text on disabled controls.",
+                            "text": "The color to use for text on disabled controls.",
                             "language": "en"
                         }
                     ],
@@ -334,7 +334,7 @@
                     "type": "NSControlTint",
                     "abstracts": [
                         {
-                            "abstract": "The current system control tint color.",
+                            "text": "The current system control tint color.",
                             "language": "en"
                         }
                     ],
@@ -346,7 +346,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the face of a selected control—that is, a control that has been clicked or is being dragged.",
+                            "text": "The color to use for the face of a selected control—that is, a control that has been clicked or is being dragged.",
                             "language": "en"
                         }
                     ],
@@ -358,7 +358,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for text in a selected control—that is, a control being clicked or dragged.",
+                            "text": "The color to use for text in a selected control—that is, a control being clicked or dragged.",
                             "language": "en"
                         }
                     ],
@@ -370,7 +370,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for text in a selected control.",
+                            "text": "The color to use for text in a selected control.",
                             "language": "en"
                         }
                     ],
@@ -382,7 +382,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The patterned color to use for the background of a scrubber control.",
+                            "text": "The patterned color to use for the background of a scrubber control.",
                             "language": "en"
                         }
                     ],
@@ -399,7 +399,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the window background.",
+                            "text": "The color to use for the window background.",
                             "language": "en"
                         }
                     ],
@@ -411,7 +411,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for text in a window's frame.",
+                            "text": "The color to use for text in a window's frame.",
                             "language": "en"
                         }
                     ],
@@ -423,7 +423,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use in the area beneath your window's views.",
+                            "text": "The color to use in the area beneath your window's views.",
                             "language": "en"
                         }
                     ],
@@ -440,7 +440,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The highlight color to use for the bubble that shows inline search result values.",
+                            "text": "The highlight color to use for the bubble that shows inline search result values.",
                             "language": "en"
                         }
                     ],
@@ -452,7 +452,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use as a virtual light source on the screen.",
+                            "text": "The color to use as a virtual light source on the screen.",
                             "language": "en"
                         }
                     ],
@@ -464,7 +464,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for virtual shadows cast by raised objects on the screen.",
+                            "text": "The color to use for virtual shadows cast by raised objects on the screen.",
                             "language": "en"
                         }
                     ],
@@ -481,7 +481,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for the face of a selected control in a list or table.",
+                            "text": "The system color used for the face of a selected control in a list or table.",
                             "language": "en"
                         }
                     ],
@@ -493,7 +493,7 @@
                     "type": "[NSColor]",
                     "abstracts": [
                         {
-                            "abstract": "An array containing the system specified background colors for alternating rows in tables and lists.",
+                            "text": "An array containing the system specified background colors for alternating rows in tables and lists.",
                             "language": "en"
                         }
                     ],
@@ -505,7 +505,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for the highlighted bezels of controls.",
+                            "text": "The system color used for the highlighted bezels of controls.",
                             "language": "en"
                         }
                     ],
@@ -517,7 +517,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for light highlights in controls.",
+                            "text": "The system color used for light highlights in controls.",
                             "language": "en"
                         }
                     ],
@@ -529,7 +529,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for the shadows dropped from controls.",
+                            "text": "The system color used for the shadows dropped from controls.",
                             "language": "en"
                         }
                     ],
@@ -541,7 +541,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for the dark edge of the shadow dropped from controls.",
+                            "text": "The system color used for the dark edge of the shadow dropped from controls.",
                             "language": "en"
                         }
                     ],
@@ -553,7 +553,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used as the background color for header cells in table views and outline views.",
+                            "text": "The system color used as the background color for header cells in table views and outline views.",
                             "language": "en"
                         }
                     ],
@@ -565,7 +565,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for the flat surface of a slider knob that hasn’t been selected.",
+                            "text": "The system color used for the flat surface of a slider knob that hasn’t been selected.",
                             "language": "en"
                         }
                     ],
@@ -577,7 +577,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for the slider knob when it is selected.",
+                            "text": "The system color used for the slider knob when it is selected.",
                             "language": "en"
                         }
                     ],
@@ -589,7 +589,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for scroll “bars”—that is, for the groove in which a scroller’s knob moves",
+                            "text": "The system color used for scroll “bars”—that is, for the groove in which a scroller’s knob moves",
                             "language": "en"
                         }
                     ],
@@ -601,7 +601,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color used for selected controls in non-key views.",
+                            "text": "The color used for selected controls in non-key views.",
                             "language": "en"
                         }
                     ],
@@ -613,7 +613,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The color to use for the face of selected menu items.",
+                            "text": "The color to use for the face of selected menu items.",
                             "language": "en"
                         }
                     ],
@@ -625,7 +625,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "The system color used for window frames, except for their text.",
+                            "text": "The system color used for window frames, except for their text.",
                             "language": "en"
                         }
                     ],
@@ -642,7 +642,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "",
+                            "text": "",
                             "language": "en"
                         }
                     ],
@@ -654,7 +654,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "",
+                            "text": "",
                             "language": "en"
                         }
                     ],
@@ -666,7 +666,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "",
+                            "text": "",
                             "language": "en"
                         }
                     ],
@@ -678,7 +678,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "",
+                            "text": "",
                             "language": "en"
                         }
                     ],
@@ -690,7 +690,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "",
+                            "text": "",
                             "language": "en"
                         }
                     ],
@@ -702,7 +702,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "",
+                            "text": "",
                             "language": "en"
                         }
                     ],
@@ -714,7 +714,7 @@
                     "type": "NSColor",
                     "abstracts": [
                         {
-                            "abstract": "",
+                            "text": "",
                             "language": "en"
                         }
                     ],
@@ -726,7 +726,7 @@
                     "type": "TransferRepresentation",
                     "abstracts": [
                         {
-                            "abstract": "",
+                            "text": "",
                             "language": "en"
                         }
                     ],

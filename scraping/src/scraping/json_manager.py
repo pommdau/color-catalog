@@ -46,6 +46,6 @@ class JsonManager:
         cls, abstract: ColorAbstract
     ) -> OrderedDict[str, Any]:
         json_dict: OrderedDict[str, Any] = OrderedDict()
-        json_dict["abstract"] = abstract.text
+        json_dict["text"] = abstract.text
         json_dict["language"] = abstract.language
         return json_dict
