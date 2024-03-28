@@ -9,12 +9,12 @@ def get_project_dir() -> str:
 
     path = __file__
     while True:
-        if path.endswith("scraping"):
+        if path.endswith("color-catalog"):
             # ルートディレクトリに到達したら終了
             break
         path = str(Path(path).parent)
 
-    return path
+    return path + "/scraping"
 
 
 if __name__ == "__main__":

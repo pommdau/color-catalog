@@ -1,10 +1,12 @@
 import json
 from collections import OrderedDict
 from enum import Enum
+from glob import glob
 from pathlib import Path
 from typing import Any
 
 from googletrans import Translator
+from utils.path import get_project_dir
 
 _translator = Translator()
 
@@ -39,18 +41,8 @@ class DefinedLanguage(Enum):
     # FINNISH = "fi"
 
 
-def main() -> None:
-    # for language in DefinedLanguage:
-    #     print(f"{language.name}, {language.value}")
-    #     print(
-    #         translate(
-    #             "Returns the color object specified by the given control tint.",
-    #             language.value,
-    #         )
-    #     )
-
-    path = "/Users/ikeh/Programming/Swift/color-catalog/scraping/result/UI Element Colors.json"  # noqa: E501
-
+def download_translated_abstracts(path: str) -> None:
+    # JSONファイルの読み込み
     json_dict: OrderedDict[str, Any]
     with Path(path).open("r") as file:
         json_dict = json.load(file, object_pairs_hook=OrderedDict)
@@ -73,6 +65,12 @@ def main() -> None:
     # 翻訳した結果をJSONへ反映する
     with Path(path).open("w") as file:
         json.dump(json_dict, file, indent=4, ensure_ascii=False)
+
+
+def main() -> None:
+    files = glob(f"{get_project_dir()}/result/*.json")
+    for file in files:
+        download_translated_abstracts(path=file)
 
 
 if __name__ == "__main__":
