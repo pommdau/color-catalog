@@ -56,8 +56,6 @@ module = [
     'requests/*',
     'googletrans'
 ]
-# GitHub Actions上で静的解析時にライブラリをインポートしないため
-# ignore_missing_imports = true
 
 ############
 # Ruffの設定
