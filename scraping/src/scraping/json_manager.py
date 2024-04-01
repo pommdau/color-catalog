@@ -5,6 +5,10 @@ from document_page import Color, ColorSection, DocumentPage
 
 
 class JsonManager:
+    """
+    Model -> JSON-Dict
+    """
+
     @classmethod
     def create_json_with_page(
         cls, page: DocumentPage
@@ -38,6 +42,10 @@ class JsonManager:
         json_dict["is_desprecated"] = color.is_desprecated
         json_dict["link"] = color.link
         return json_dict
+
+    """
+    JSON-Dict -> Model
+    """
 
 
 def main() -> None:
