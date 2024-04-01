@@ -15,7 +15,7 @@ extension NSColor {
         return allColors[cleanedName]
     }
 }
-"""
+"""  # noqa: E501
 
 _contents_header = """
 import AppKit
