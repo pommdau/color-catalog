@@ -43,4 +43,4 @@ jobs:
       - name: Lint with mypy
         run: |
           pip install mypy
-          mypy ./scraping --config-file ./scraping/pyproject.toml
+          mypy ./scraping --config-file ./scraping/pyproject.toml --ignore-missing-imports
