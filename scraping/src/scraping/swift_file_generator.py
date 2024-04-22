@@ -15,7 +15,7 @@ extension NSColor {
         return allColors[cleanedName]
     }
 }
-"""  # noqa: E501
+"""
 
 _contents_header = """
 import AppKit
@@ -46,7 +46,7 @@ def create_swift_file(pages: list[DocumentPage]) -> None:
                 #     contents += "//"  # betaのものはコメントアウト
                 contents += " " * 12
                 # e.g. "labelColor": NSColor.labelColor as NSColor,
-                contents += f'"{color.title}": NSColor.{color.title} as {color.type},\n'  # noqa: E501
+                contents += f'"{color.title}": NSColor.{color.title} as {color.type},\n'
     contents += _contents_footer
 
     with Path("result/NSColor+systemName.swift").open("w") as file:

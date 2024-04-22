@@ -51,19 +51,15 @@ def download_translated_abstracts(path: str) -> None:
         json_dict = json.load(file, object_pairs_hook=OrderedDict)
 
         for section_index, _ in enumerate(json_dict["sections"]):
-            for color_index, color in enumerate(
-                json_dict["sections"][section_index]["colors"]
-            ):
+            for color_index, color in enumerate(json_dict["sections"][section_index]["colors"]):
                 # 各色のabstractの英語訳を取得
                 abstract_in_english = color["abstracts"]["en"]
                 # 各言語で翻訳
                 for language in DefinedLanguage:
-                    translated_abstract = google_translate(
-                        text=abstract_in_english, dest_lang=language.name
+                    translated_abstract = google_translate(text=abstract_in_english, dest_lang=language.name)
+                    json_dict["sections"][section_index]["colors"][color_index]["abstracts"][language.value] = (
+                        translated_abstract
                     )
-                    json_dict["sections"][section_index]["colors"][
-                        color_index
-                    ]["abstracts"][language.value] = translated_abstract
 
     # 翻訳した結果をJSONへ反映する
     with Path(path).open("w") as file:

@@ -10,27 +10,17 @@ class JsonManager:
     """
 
     @classmethod
-    def create_json_with_page(
-        cls, page: DocumentPage
-    ) -> OrderedDict[str, str]:
+    def create_json_with_page(cls, page: DocumentPage) -> OrderedDict[str, str]:
         json_dict: OrderedDict[str, Any] = OrderedDict()
         json_dict["title"] = page.title
-        json_dict["sections"] = [
-            JsonManager._create_json_with_section(section)
-            for section in page.sections
-        ]
+        json_dict["sections"] = [JsonManager._create_json_with_section(section) for section in page.sections]
         return json_dict
 
     @classmethod
-    def _create_json_with_section(
-        cls, section: ColorSection
-    ) -> OrderedDict[str, Any]:
+    def _create_json_with_section(cls, section: ColorSection) -> OrderedDict[str, Any]:
         json_dict: OrderedDict[str, Any] = OrderedDict()
         json_dict["title"] = section.title
-        json_dict["colors"] = [
-            JsonManager._create_json_with_color(color)
-            for color in section.colors
-        ]
+        json_dict["colors"] = [JsonManager._create_json_with_color(color) for color in section.colors]
         return json_dict
 
     @classmethod

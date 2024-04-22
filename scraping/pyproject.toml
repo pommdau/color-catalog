@@ -45,17 +45,16 @@ check_untyped_defs = true  # 型注釈がない関数やメソッドに対して
 warn_redundant_casts = true  # 冗長なキャストに警告
 
 # パス修正対応(正しいかは不明)
-namespace_packages = false
 mypy_path = "./src/scraping"
-
 
 [[tool.mypy.overrides]]
 
 # サードパーティの[import-untyped]を無視する
 module = [
     'requests/*',
-    'googletrans'
+    'googletrans/*',
 ]
+ignore_missing_imports = true
 
 ############
 # Ruffの設定
@@ -63,7 +62,7 @@ module = [
 
 [tool.ruff]
 # 一行の最大文字数
-line-length = 79
+line-length = 120
 
 # Option Settings
 ## https://gihyo.jp/article/2023/03/monthly-python-2303
