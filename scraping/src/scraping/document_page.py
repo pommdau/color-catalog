@@ -20,9 +20,7 @@ class Color:
 
     def __init__(self, element: WebElement) -> None:
         self.title = (
-            element.find_element(By.CLASS_NAME, "decorated-title")
-            .find_element(By.CLASS_NAME, "identifier")
-            .text
+            element.find_element(By.CLASS_NAME, "decorated-title").find_element(By.CLASS_NAME, "identifier").text
         )
 
         self.type = (
@@ -32,11 +30,7 @@ class Color:
         )
 
         try:
-            abstract_text = (
-                element.find_element(By.CLASS_NAME, "abstract")
-                .find_element(By.CLASS_NAME, "content")
-                .text
-            )
+            abstract_text = element.find_element(By.CLASS_NAME, "abstract").find_element(By.CLASS_NAME, "content").text
         except NoSuchElementException:
             abstract_text = ""
         self.abstracts = OrderedDict()
@@ -63,11 +57,7 @@ class ColorSection:
     colors: list[Color]
 
     def __init__(self, element: WebElement) -> None:
-        self.title = (
-            element.find_element(By.CLASS_NAME, "section-title")
-            .find_element(By.TAG_NAME, "a")
-            .text
-        )
+        self.title = element.find_element(By.CLASS_NAME, "section-title").find_element(By.TAG_NAME, "a").text
 
         color_elements = element.find_elements(By.CLASS_NAME, "topic")
         self.colors = [Color(element=element) for element in color_elements]
@@ -86,9 +76,9 @@ class DocumentPage:
             .text
         )
 
-        section_elements = element.find_element(
-            By.CLASS_NAME, "contenttable"
-        ).find_elements(By.CLASS_NAME, "contenttable-section")
+        section_elements = element.find_element(By.CLASS_NAME, "contenttable").find_elements(
+            By.CLASS_NAME, "contenttable-section"
+        )
         self.sections = [ColorSection(element) for element in section_elements]
 
 
@@ -101,16 +91,12 @@ class DocumentPageReader:
         self.driver.get(self.url)
         # タイトルの表示を待つ
         WebDriverWait(self.driver, 5).until(
-            expected_conditions.presence_of_element_located(
-                (By.CLASS_NAME, "topictitle")
-            )
+            expected_conditions.presence_of_element_located((By.CLASS_NAME, "topictitle"))
         )
 
     def load_page(self) -> DocumentPage:
         self._go_toppage()
-        return DocumentPage(
-            element=self.driver.find_element(By.TAG_NAME, "body")
-        )
+        return DocumentPage(element=self.driver.find_element(By.TAG_NAME, "body"))
 
 
 def main() -> None:

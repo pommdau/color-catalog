@@ -43,16 +43,16 @@ disallow_untyped_defs = true  # 関数定義の引数/戻り値に型アノテ�
 no_implicit_optional = true  # デフォルト引数に None を取る場合型アノテーションに Optional 必須
 check_untyped_defs = true  # 型注釈がない関数やメソッドに対して型チェックを行う
 warn_redundant_casts = true  # 冗長なキャストに警告
-namespace_packages = false
-mypy_path = "./src/scraping"
 
+# パス修正対応(正しいかは不明)
+mypy_path = "./src/scraping"
 
 [[tool.mypy.overrides]]
 
 # サードパーティの[import-untyped]を無視する
 module = [
     'requests/*',
-    'googletrans'
+    'googletrans/*',
 ]
 ignore_missing_imports = true
 
@@ -61,7 +61,8 @@ ignore_missing_imports = true
 ############
 
 [tool.ruff]
-line-length = 79
+# 一行の最大文字数
+line-length = 120
 
 # Option Settings
 ## https://gihyo.jp/article/2023/03/monthly-python-2303
